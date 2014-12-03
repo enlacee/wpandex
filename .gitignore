@@ -1,0 +1,8 @@
+# files
+*.log
+
+
+# IDs
+nbproject/*
+*.sublime-project
+*.sublime-workspace
