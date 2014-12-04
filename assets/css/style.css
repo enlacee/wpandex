@@ -7,16 +7,153 @@
 /*Import Global Compulsory CSS Files*/
 @import url(app.css);
 
+.wrapper {
+  
+}
+.red {
+    border:1px solid red;
+}
+.blue {
+    border:1px solid blue;
+}
+.black {
+    border:1px solid black;
+}
 
 /*Boxed Layout
 ------------------------------------*/
+.boxed-layout {
+  padding: 0;
+  box-shadow: 0 0 5px #ccc;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  /*background: url(../img/patterns/15.png) repeat;*/
+}
+
 .container {
   padding: 0px 0px !important;
 }
 
-.wrapper {
-  
+/*Top Bar (login, search etc.)
+------------------------------------*/
+.bg-topbar {
+  background: transparent url('../img/bgtopbar.png') repeat-y right;
 }
+
+.topbar {
+    margin: 8px 40px 8px 0;
+}
+.top-contact-phone
+{
+    margin: 0px 25px 0px 0;
+}
+.ico-contact {
+    font-size: 20px;
+    vertical-align: middle;
+    position: relative;
+    left:4px;
+}
+
+.bg-topbar-middle {
+    height: 69px;
+}
+.topbar ul.loginbar {
+    margin: 0;
+}
+
+.topbar ul.loginbar > li {
+    display: inline;
+    list-style: none;
+}
+
+.topbar ul.loginbar > li > a, 
+.topbar ul.loginbar > li > a:hover {
+    color: #cacaca;
+    font-size: 11px;    
+}
+
+.topbar ul.loginbar li.topbar-devider { 
+    top: -1px;
+    padding: 0;
+    font-size: 8px;
+    position: relative;
+    margin: 0 13px 0 17px;
+    font-family: Tahoma;
+    border-right: solid 1px #bbb;
+}
+
+/* middle menu
+ ----------------------*/
+.topbar-middle ul{
+    margin: 0;
+}
+
+.topbar-middle ul > li {
+    display: inline;
+    list-style: none;
+}
+
+.topbar-middle ul > li > a, 
+.topbar-middle ul > li > a:hover {
+    color: #000;
+    font-size: 12px;
+    
+}
+.topbar-middle ul li.topbar-middle-devider { 
+    top: 0px;
+    padding: 0;
+    font-size: 12px;
+    position: relative;
+    margin: 0 13px 0 17px;
+    font-family: Tahoma;
+    border-right: solid 1px #000;
+}
+/* logo
+---------------------*/
+.logo {
+    position: absolute;
+    top:-16px;
+}
+@media (max-width: 450px) {
+   .logo img {
+      width:10px;
+   }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* style list custom
 ------------------------------------------------*/
@@ -48,7 +185,7 @@ ul.nav .active{ color: #0192d8 !important;}
 	color: white;
 }
 .color-text-blue {
-  color: #00528c;
+  color: #00659d;
 }
 .color-text-blue-dark {
   color: #003f6a !important;
