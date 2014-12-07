@@ -1,7 +1,6 @@
 # files
 *.log
-docs/psd/*.psd
-docs/psd/*.rar
+docs/psd/*.*
 # IDs
 nbproject/*
 *.sublime-project
