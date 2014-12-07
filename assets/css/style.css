@@ -7,14 +7,18 @@
 /*Import Global Compulsory CSS Files*/
 @import url(app.css);
 
+body {
+    color: black;
+}
 .wrapper {
   
 }
 .red {
-    border:1px solid red;
+    background-color: red;
 }
 .blue {
-    border:1px solid blue;
+    
+    background-color: blue;
 }
 .black {
     border:1px solid black;
@@ -31,7 +35,7 @@
 }
 
 .container {
-  padding: 0px 0px !important;
+  padding: 0px 0px;
 }
 
 /* [HEADER] Top Bar (login, search etc.)
@@ -135,12 +139,8 @@
     }
 }
 
-/* mega menu menu items
+/* mega menu menu items (content submenu)
 --------------------------------------- */
-.mega-menu .menu {
-
-}
-
 .mega-menu .menu > li > a {
     margin: 5px 0;
     font-size: 14px;
@@ -167,7 +167,7 @@
     text-decoration: underline;
 }
 .mega-menu .dropdown-menu {
-    background:rgba(255,255,255, 0.5);
+    background:rgba(255,255,255, 0.8);
     left: 0;
     top: 100%;
     width: 100%;
@@ -182,16 +182,14 @@
     padding: 0;
     margin: 0;
     background-color: #fafafa;
-    /*-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);*/
     border: 1px solid #6b6564;
-    /*z-index: 101;*/
 }
 @media (max-width: 450px) {
    .dropdown-menu {
       min-width: 100%;
    }   
 }
+
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
@@ -217,8 +215,22 @@
     text-shadow: 1px 1px 1px #222222;
     border-left: 3.5px solid #fff;
     border-right: 3.5px solid #fff;
+    border-top: 1px solid #fff;
+    text-transform: uppercase;
 }
-
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    border-top: 1px solid #6b6564;
+    border-left: 1px solid #6b6564;
+    border-right: 1px solid #6b6564; 
+    color: #0073b6;
+    background-color: #fff;
+    font-weight: bold;   
+    top:1px;
+    box-shadow: 2px -2.6px 5px #CCC, 0px -0px 0px #d0dbe1;
+    text-shadow: none;
+}
 
 .mega-menu.dropdown {
     /*border:1px solid red;
@@ -236,10 +248,96 @@
     font-size: 14px;
 }
 
+/* [body] slide
+----------------------------------*/
+/*.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img{
+    min-height: 406px;
+    width: auto;
+}
+*/
 
+.slide-main {
+    padding: 0;
+    background-color: white;
+    min-height: 406px;
+    max-height: 406px;
+    overflow-y: hidden; 
+}
+@media (max-width: 767px) {
+    .slide-main {
+        min-height:0;
+    }
+}
+@media (max-width: 450px) {
+    .slide-main {
+        min-height:0;
+    }  
+}
+.slide-main img {
+    width: 100%;
+}
+.slide-main-lef {
+    padding: 0 0 0 2px;
+}
+.bg-slide {
+    background: transparent url('../img/slides/bg-slide.jpg') repeat-x top;
+    border-top:1px solid #6b6564;
+}
+.box-slide {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 30px 10px 10px;
+    /* custom boostrap*/
+    position: absolute;
+    right: 0px;
+    bottom: 11%;
+    color: #000;    
+    text-align: center;
+}
+.box-slide h3 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px white;
+    text-transform:uppercase;
+    padding: 0;
+    margin: 0;
+}
 
+.carousel-control {
+    background: transparent none no-repeat top !important;
+    
+}
+.carousel-control {
+    width: 5%;
+}
 
+.body-food .col-md-4 {
+    min-height: 132px;
+    
+    padding: 0 30px 0 0px;
+    
+    
+}
 
+.footer {
+    background-color: #c3c3c5;
+    border-top: 2px solid #9a9a9a;
+    padding: 0 0 10px 0;
+}
+.footer-item-one {
+    color:black;
+    font-weight: bold;
+    
+    
+}
+
+.text-bold {
+    font-weight: bold;
+    
+}
+.text-unbold {
+    font-weight:normal;
+}
 
 
 
@@ -325,6 +423,10 @@ ul.nav .active{ color: #0192d8 }
   color: #49494b;
 }
 
+.color-bg-white {
+  background-color: white;
+}
+
 .color-bg-blue {
   background-color: #00528c;
 }
@@ -340,7 +442,7 @@ color: #F00 !important;
 /*  center image and space
 ------------------------------------*/
 .img-center {
-	margin: 0 auto;	
+    margin: 0 auto;	
 }
 @media (max-width: 450px) {
    .img-center {
@@ -365,6 +467,10 @@ color: #F00 !important;
 
 /*   Navbar
 ---------------------------------*/
+.main-menu {
+    padding-right: 40px
+
+}
 .header .navbar-default {
     border: none;
     background: none;
@@ -373,7 +479,10 @@ color: #F00 !important;
   .header .navbar-default {
     border-color: #e7e7e7;
     background-color: #f8f8f8;
-  }   
+  }
+  .main-menu {
+    padding-right: 0px
+  }
 }
 /* delete space default of bootrap*/
 .navbar-collapse {

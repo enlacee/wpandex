@@ -1,6 +1,6 @@
 # files
 *.log
-
+docs/psd/*.psd
 
 # IDs
 nbproject/*
