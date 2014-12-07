@@ -339,6 +339,29 @@ body {
     font-weight:normal;
 }
 
+/* social
+--------------------------*/
+.div-social {
+    text-align: center;
+    position: fixed;
+    top: 11.5em;
+    left: auto;
+    width: auto;
+    right: 0em;
+    border:1px solid;
+    padding: 10px 5px 10px 5px;
+    /* background*/
+    background-color: white;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;;
+    -o-border-radius: 5px 0 0 5px;;
+    border-radius: 5px 0 0 5px;;
+    border: 5px;    
+}
+.div-social a {
+    margin: 0 0 3px 0;
+    display: block;
+}
 
 
 
