@@ -443,7 +443,7 @@ body {
     margin-bottom: 5px;
 }
 
-.subtitle h2,h3 {        
+.subtitle>h2 {        
     line-height: 65px;
     min-height: 35px;
 }
