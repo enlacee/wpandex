@@ -14,7 +14,8 @@ body {
   
 }
 .wrapper-container {
-    background-color: #DBDADF;
+    background: #DBDADF url('../img/slides/bg-slide.jpg') repeat-x top;
+    padding-bottom: 13px; 
 }
 .red {
     background-color: red;
@@ -295,8 +296,7 @@ body {
     z-index: 1;  
 }
 
-.bg-slide {
-    background: transparent url('../img/slides/bg-slide.jpg') repeat-x top;
+.bg-slide {    
     border-top:1px solid black;
 }
 .box-slide {
@@ -326,9 +326,7 @@ body {
 .carousel-control {
     width: 5%;
 }
-.body-food {
-    padding-bottom: 40px; 
-}
+
 .body-food .col-md-4 {
     min-height: 132px;  
 }
