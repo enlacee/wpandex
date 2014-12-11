@@ -277,9 +277,21 @@ body {
     width: 100%;
 }
 .slide-main-lef {
-    padding: 0 0 0 2px;
-    /*min-width: 308px;*/
+  padding: 0 0 0 15px;  
 }
+.slide-main-lef>div>div  {
+    padding: 0 0 0 0px;    
+}
+.btn-text-see-project {
+    position: absolute;
+    bottom: 9px;
+    left: 0px;  
+}
+.btn-see-project {
+    position: absolute;
+    z-index: 1;  
+}
+
 .bg-slide {
     background: transparent url('../img/slides/bg-slide.jpg') repeat-x top;
     border-top:1px solid black;
@@ -483,6 +495,13 @@ ul.nav .active{ color: #0192d8 }
 }
 .color-text-blue-dark {
   color: #003f6a !important;
+}
+
+.color-text-green {
+  color: #018e30;
+}
+.color-text-green-dark {
+  color: green;
 }
 
 .color-text-gray-light {
