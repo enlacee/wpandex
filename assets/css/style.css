@@ -15,7 +15,7 @@ body {
 }
 .wrapper-container {
     background: #DBDADF url('../img/slides/bg-slide.jpg') repeat-x top;
-    padding-bottom: 13px; 
+    /*padding-bottom: 13px; */
 }
 .red {
     background-color: red;
@@ -327,6 +327,9 @@ body {
     width: 5%;
 }
 
+.body-food {
+    padding-bottom: 13px;
+}
 .body-food .col-md-4 {
     min-height: 132px;  
 }
@@ -425,11 +428,39 @@ body {
     background: transparent url(../img/bg-button.jpg) repeat top;  
 }
 
+/* pages
+------------------------------*/
+.wrapper-container ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.container-me-page {
+    padding: 0 0 0 25px;
+}
 
+.form-control {
+    margin-bottom: 5px;
+}
 
+.subtitle h2,h3 {        
+    line-height: 65px;
+    min-height: 35px;
+}
 
-
-
+.subtitle-bg-1 {
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ffffff 1%, #ffffff 9%, #ffffff 20%, #e5e5e5 33%, #c3c3c3 41%, #777777 60%, #5b5b5b 80%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%,#ffffff), color-stop(9%,#ffffff), color-stop(20%,#ffffff), color-stop(33%,#e5e5e5), color-stop(41%,#c3c3c3), color-stop(60%,#777777), color-stop(80%,#5b5b5b), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #ffffff 1%,#ffffff 9%,#ffffff 20%,#e5e5e5 33%,#c3c3c3 41%,#777777 60%,#5b5b5b 80%,#000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #ffffff 1%,#ffffff 9%,#ffffff 20%,#e5e5e5 33%,#c3c3c3 41%,#777777 60%,#5b5b5b 80%,#000000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #ffffff 1%,#ffffff 9%,#ffffff 20%,#e5e5e5 33%,#c3c3c3 41%,#777777 60%,#5b5b5b 80%,#000000 100%); /* IE10+ */
+    background: linear-gradient(to right,  #ffffff 1%,#ffffff 9%,#ffffff 20%,#e5e5e5 33%,#c3c3c3 41%,#777777 60%,#5b5b5b 80%,#000000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+.subtitle-bg-2 {
+    background: red;
+}
 
 
 
