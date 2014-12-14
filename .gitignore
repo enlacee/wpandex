@@ -1,7 +1,10 @@
-# files
-*.log
-docs/psd/*.*
-# IDs
-nbproject/*
+# no-follow
+
+# IDES (netbeans, sublime)
+/nbproject/*
 *.sublime-project
 *.sublime-workspace
+
+# project
+src/wp-content/uploads/*
+!src/wp-content/uploads/empty
