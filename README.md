@@ -81,5 +81,10 @@ Ahora tenemos que crear **post** asignandole esta categoria **news**  para que s
 
 
 
+image reference
+
+![thumbnail](https://github.com/enlacee/wpandex/blob/master/src/wp-content/themes/andexone/screenshot.png) 
 
 
+
+ :
