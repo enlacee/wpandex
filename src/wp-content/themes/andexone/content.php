@@ -38,8 +38,7 @@
 
 
                 <!-- NAVBAR -->
-                <div class="col-md-4 page-sidebar">                    
-                    Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!
+                <div class="col-md-4 page-sidebar">
                     <?php get_sidebar(); ?>
                 </div>
             </div>

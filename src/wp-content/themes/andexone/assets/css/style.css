@@ -503,6 +503,23 @@ body {
     margin: 0;    
 }
 
+.boder-dotted-black {
+    border-bottom: 1px dotted #0072b7;
+    margin: 0;    
+}
+.wg-boder-black-top {
+    border-bottom: 1px dotted black;
+    margin: 20px 15px 10px 0px;
+
+}
+.wg-boder-black-bottom {
+    border-top: 1px dotted black;
+    border-bottom: 2px solid white;
+    padding: 0 0 25px 0px;
+    margin: 20px 25px 20px 0;
+}
+
+
 /*-------------------END THEME NOTICIAS-----------------*/
 
 
@@ -550,6 +567,57 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
 }
 
+/*
+ Widget
+*/
+.widget-title, .wg-title-video, .wg-title-document {
+    font-family: "Times New Roman";
+    font-size: 18px;
+    color:black;
+    height: 29px;
+    line-height: 29px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px #222222;
+}
+.widget_huge_it_gallery_widget .widget-title::before {   
+   content: url(../img/ico-gallery.jpg);
+   margin-right:15px;
+   position: relative;
+   bottom: -3px;
+}
+
+.wg-title-video::before {
+   content: url(../img/ico-video.jpg);
+   margin-right:15px;
+}
+
+.wg-title-document::before {
+    content: url(../img/ico-download.jpg);
+    margin-right:15px;    
+}
+
+.textwidget ul li::before {
+   content: url(../img/ico_arrow.jpg);
+   margin-right: 5px;    
+} 
+
+
+
+.ico-pdf {
+    background: transparent  url(../img/ico-pdf.png) no-repeat top left;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 8px;
+
+}
+.ico-word {
+    background: transparent url(../img/ico-word.png) no-repeat top left;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 3px; 
+}
 
 
 
