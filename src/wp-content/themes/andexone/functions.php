@@ -19,13 +19,46 @@ function andexone_setup() {
     add_theme_support( 'post-formats', array( 'aside', 'image', 'link', 'quote', 'status' ) );
 
     // This theme uses wp_nav_menu() in one location.
-    register_nav_menu( 'primary', __( 'Primary Menu', 'andexone' ) );
+    //register_nav_menu( 'primary', __( 'Primary Menu', 'andexone' ) );
     
     // This theme uses a custom image size for featured images, displayed on "standard" posts.
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 624, 9999 ); // Unlimited height, soft crop
 }
 add_action( 'after_setup_theme', 'andexone_setup' );
+
+
+
+/**
+ * This theme uses wp_nav_menu() in 2 locations.
+ */
+function register_additional_nav_menus() {
+    register_nav_menus( array(
+            'primary' => __( 'Primary Menu', 'andexone' ),
+            'secondary' => __( 'Seconday Menu', 'andexone' )		
+    ) );
+}
+add_action( 'after_setup_theme', 'register_additional_nav_menus' );
+
+/**
+ * Register sidebars.
+ *
+ * Registers our main widget area and the front page widget areas.
+ *
+ * @since Andex One 1.0
+ */
+function andexone_widgets_init() {
+	register_sidebar( array(
+		'name' => __( 'Main Sidebar', 'andexone' ),
+		'id' => 'sidebar-1',
+		'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'andexone' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+}
+add_action( 'widgets_init', 'andexone_widgets_init' );
 
 /**
  * Enqueue scripts and styles for front-end.

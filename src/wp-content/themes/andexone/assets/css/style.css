@@ -94,6 +94,10 @@ body {
     border-right: solid 0px #bbb;
 }
 
+.topbar ul.loginbar li.current-menu-item a {
+    color: black;
+}
+
 /* [HEADER] middle menu
  ----------------------*/
 .topbar-middle ul{
@@ -119,15 +123,16 @@ body {
     font-size: 12px;    
 }
 
-.topbar-middle ul li.topbar-middle-devider { 
-    top: 0px;
-    padding: 0;
-    font-size: 12px;
-    position: relative;
-    margin: 0 13px 0 17px;
-    font-family: Tahoma;
-    border-right: solid 1px #666;
+.topbar-middle ul li.current-menu-item a {
+    color: #0072b7;
+    text-decoration: underline;
 }
+.topbar-middle ul li.current-menu-item::before {
+   content: url(../img/ico_arrow.jpg);
+   margin-right: 5px;
+    
+}
+
 
 /* [HEADER] logo
 ---------------------*/
@@ -270,7 +275,16 @@ body {
     width: auto;
 }
 */
-
+.slide-title {
+    
+}
+.slide-title a, 
+.slide-title a:hover,
+.slide-title a:active,
+.slide-title a:focus {
+    text-decoration: none;
+    color:black;
+}
 .slide-main {
     padding: 0;
     background-color: white;
@@ -414,7 +428,8 @@ body {
 }
 .news-f1 div:nth-child(2) a, a:hover,a:active, a:focus {    
     text-decoration: none;
-    color:black;    
+    color:black;
+    line-height: 14px;
 }
 .news-f2 { 
         /*
@@ -446,14 +461,17 @@ body {
     background: transparent url('../img/news-bg-title.jpg') no-repeat top right;
     
 }
-.btn-see-news {
+.btn-see-news {    
+    background: transparent url('../img/btn-see-news.jpg') repeat-y top right;
+    height: 30px;
     margin: 0 15px 25px 0;
+    padding: 7px 15px;
 }
 .btn-see-news, 
 .btn-see-news:hover,
 .btn-see-news:focus, 
 .btn-see-news:active {
-    background: transparent url('../img/btn-see-news.jpg') repeat-y top right;
+    
     color: white;
     text-decoration: none;
     font-weight: bold;

@@ -25,7 +25,7 @@
 <?php ?>
         <h4 class="text-bold"><?php echo $objCategory->name ?></h4>
         <div class="row news-f1">
-            <div class="col-md-7 col-sm-6">
+            <div class="col-md-6 col-sm-6">
                 <?php if (has_post_thumbnail($dataPost->ID)): ?>
                 <a href="<?php echo get_permalink($dataPost->ID) ?>" title="<?php echo limit_words($dataPost->post_title) ?>">
                     <?php echo get_the_post_thumbnail($dataPost->ID, array(164, 132)); ?>
@@ -40,7 +40,7 @@
             <a class="btn-main-gray" href="<?php echo get_permalink($dataPost->ID) ?>">ver noticia</a>                            
         </div>
 <?php else: ?>
-        <h4 class="text-bold">NOTICIAS</h4>
+        <h4 class="text-bold">NOTICIAS .config</h4>
         <div class="row news-f1">
             <div class="col-md-7 col-sm-6">
                 <img class="img-responsive"  src="<?php echo get_template_directory_uri() ?>/assets/img/f_noticia_uno.jpg">

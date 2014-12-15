@@ -35,7 +35,7 @@ You have to replace the existing folder **wp-content**  by **src/wp-content**
 #### 1 change to url friendly
 Change to url friendy: 
 we must go: **administrator** 
-Dashboard : settings : permalinks (radioButton : Custom Structure)
+*Dashboard : settings : permalinks (radioButton : Custom Structure)*
 paste this :
     
     /%category%/%postname%.html
@@ -54,9 +54,10 @@ I so ago in terminal bash:
 
 #### crear las categorias necesarias
 
-Entoncés creamos esta lista de categorias los terminos seran en ingles:
+Entoncés creamos esta lista de **categorias** los terminos seran en ingles:
 
     news : noticias
+    slides : slides de home
     ... :...
 
 
@@ -68,6 +69,19 @@ es muy importante ya que sera la que se mostrara como principal en la pagina de 
 
 Ahora tenemos que crear **post** asignandole esta categoria **news**  para que se muestren correctamnete.
 
+#### slides (slides)
+creamos la categoria slides si no la tenemos ya creada. y empezamos a relacionarlos con los post, es muy importante subir una imagen para estos post (en **Feacture Image**)
+ir a: Dashboard : Post : add post (title, feacture image)
+
+
+#### crear los menus de  navegacion ()
+Agregar 2 menus de navegacion :
+ir a : *Dashboard : Aparence : menus :(link:create new menu)*
+* primary menu (asignar las paginas correspondientes : home,contactenos)
+* second menu (asignar las paginas correspondientes : proyectos, socios estrátegicos,noticias)
+
+
+####  
 
 
 

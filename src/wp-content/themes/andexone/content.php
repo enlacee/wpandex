@@ -14,7 +14,7 @@
                     <h2 class="color-text-blue">NOTICIAS</h2>
                 </div>
                 <div class="pull-right">
-                    <a href="#" class="btn btn-see-news">boton ver noticias</a>
+                    <a href="#" class="btn-see-news">boton ver noticias</a>
                 </div>            
             </div>
 
@@ -33,17 +33,22 @@
 
             <div class="row margin-bottom-60">
                 <div class="col-md-8">
-    <?php the_content(); ?>
+                    <?php the_content(); ?>
                 </div>
 
 
                 <!-- NAVBAR -->
-                <div class="col-md-4 page-sidebar">
-                        Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!                    
+                <div class="col-md-4 page-sidebar">                    
+                    Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!
+                    <?php get_sidebar(); ?>
                 </div>
             </div>
-            <div class="boder-dotted-blue-bottom"></div>
+            <div class="boder-dotted-blue-bottom "></div>
 
-            <div class="clearfix " style="margin-top: 10px">
-                <a href="#" class="pull-left btn btn-see-news">boton ver noticias</a>
+            <div class="pull-left " style="margin-top: 10px">
+                <a href="#" class="btn-see-news">boton ver noticias</a>                
             </div>
+                        
+            <div class="clearfix"></div>
+            <br />
+            <br />

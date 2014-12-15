@@ -27,16 +27,13 @@
                     <div class="container">
                         <div class="topbar clearfix">
 <?php
-$menuParameters = array(
-    'container' => false,
-    'echo' => false,
-    'theme_location' => 'primary',
-    'container_class' => '');
-$menu = wp_nav_menu($menuParameters);
-$li = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul>$#' ), '', $menu );
+$menuParameters = array( 'container' => false, 'container_class' => '',
+    'echo' => false, 'theme_location' => 'primary', 'depth' => 1);
+$primaryMenu = wp_nav_menu($menuParameters);
+$list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul>$#' ), '', $primaryMenu );
 ?>
                             <ul class="loginbar pull-right">
-                                <?php echo $li ?>
+                                <?php echo $list ?>
                                 <li class=""><a href="#">español</a></li>
                             </ul>
                             <!-- <ul class="loginbar pull-right">
@@ -62,10 +59,21 @@ $li = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul>$
                         <div class="col-md-9 col-sm-9">
                             <div class="row">
                                 <div class="topbar-middle clearfix">
-                                    <ul class="">                                        
-                                        <li><a href="#">Proyectos</a></li>                                        
-                                        <li><a href="#">Socios estratégicos</a></li>                                        
-                                        <li><a href="#">Noticias</a></li>
+<?php
+$menuParam = array( 'container' => false, 'container_class' => '',
+    'echo' => false, 'theme_location' => 'secondary', 'depth' => 1,
+    'fallback_cb'     => false);
+$secondaryMenu = wp_nav_menu($menuParam);
+$list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul>$#' ), '', $secondaryMenu );
+?>                                    
+                                    <ul>
+                                        <?php if (!empty($list)): ?>
+                                        <?php echo $list ?>
+                                        <?php else: ?>
+                                        <li><a href="#">Proyectos config</a></li>                                        
+                                        <li><a href="#">Socios estratégicos config</a></li>                                        
+                                        <li><a href="#">Noticias config</a></li>                                        
+                                        <?php endif; ?>
                                     </ul>
                                 </div>
                             </div>

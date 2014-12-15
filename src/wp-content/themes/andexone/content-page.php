@@ -25,8 +25,9 @@
                         </footer><!-- .entry-meta -->	                    
                 </article><!-- #post -->
             </div>
-            <div class="col-md-4 page-sidebar">
-                    Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!                    
+            <div class="col-md-4 page-sidebar">                
+                Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!  
+                <?php var_dump(get_sidebar()) ?>
             </div>
         </div>
 
