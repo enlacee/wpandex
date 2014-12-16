@@ -533,8 +533,7 @@ body {
     background-color: #DDF5FF;
     -webkit-border-radius: 10px 0 0 10px;
     border-radius: 10px 0 0 10px;
-    min-height: 550px;
-    padding: 25px 0 30px 20px;
+    min-height: 550px;    
 }
 .wrapper-container ul {
     list-style: none;

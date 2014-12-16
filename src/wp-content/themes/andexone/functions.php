@@ -77,7 +77,7 @@ function andexone_scripts_styles() {
     $wp_scripts->add_data('andexone-ie-2', 'conditional', 'lt IE 9');
     // load jquey customs
     wp_deregister_script('jquery');
-    wp_register_script('jquery', get_template_directory_uri() . '/assets/plugins/jquery.min.js', array(), false, true);
+    wp_register_script('jquery', get_template_directory_uri() . '/assets/plugins/jquery.min.js', array(), false, false);
     wp_enqueue_script('jquery');
     
     wp_enqueue_script( 'andexone-navigation', get_template_directory_uri() . '/assets/plugins/bootstrap/js/bootstrap.min.js', array(), false, true);
