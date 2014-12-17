@@ -14,7 +14,7 @@
                     <h2 class="color-text-blue">NOTICIAS</h2>
                 </div>
                 <div class="pull-right">
-                    <a href="#" class="btn-see-news">boton ver noticias</a>
+                    <a href="<?php echo esc_url( home_url( '/noticias' ) ); ?>" class="btn-see-news">boton ver noticias</a>
                 </div>            
             </div>
 
@@ -45,7 +45,7 @@
             <div class="boder-dotted-blue-bottom "></div>
 
             <div class="pull-left " style="margin-top: 10px">
-                <a href="#" class="btn-see-news">boton ver noticias</a>                
+                <a href="<?php echo esc_url( home_url( '/noticias' ) ); ?>" class="btn-see-news">boton ver noticias</a>                
             </div>
                         
             <div class="clearfix"></div>

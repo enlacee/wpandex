@@ -5,13 +5,13 @@
                 <div class="margin-bottom-10"></div>
                 <div class="container">
                     <div class="col-md-5 footer-item-one">
-                        <p>Contáctanos al:<br />
+                        <p><?php _e('Contáctanos al') ?>:<br />
                             <span class="text-unbold">(511)</span> 4367442<br />
                         Av. Javier Prado Este 3569, San Borja, Lima 41 - Perú
                         <span class="color-text-blue-dark">geosoluciones@andex.com.pe</span>
                         </p>
                     </div>
-                    <div class="col-md-4">Andex © .Todos los derechos reservados</div>
+                    <div class="col-md-4"><?php _e('Andex © .Todos los derechos reservados') ?></div>
                     <div class="col-md-3 text-right">
                         <a href="#" title="skype">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/facebook.png" alt="skype">

@@ -14,7 +14,7 @@ get_header(); ?>
     <div class="wrapper-container">
         <div class="container container-me-page color-bg-white ">
             <div class="subtitle subtitle-bg-1">
-                <h2>Contáctenos</h2>
+                <h2><?php _e('Contáctenos') ?></h2>
             </div>
 
             <div class="row margin-bottom-60">
@@ -26,7 +26,7 @@ get_header(); ?>
                             <div class="form-group">
                                 <label for="name" class="col-sm-3 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    Nombre</label>
+                                    <?php _e('Nombre') ?></label>
                                 <div class="col-sm-9">
                                   <input type="text" class="form-control required" name="name" />
                                 </div>
@@ -36,7 +36,7 @@ get_header(); ?>
                             <div class="form-group">
                                 <label for="company" class="col-sm-3 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    Empresa</label>
+                                    <?php _e('Empresa') ?></label>
                                 <div class="col-sm-9">
                                   <input type="text" class="form-control" name="company" />
                                 </div>
@@ -46,7 +46,7 @@ get_header(); ?>
                             <div class="form-group">
                                 <label for="email" class="col-sm-3 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    Correo electrónico</label>
+                                    <?php _e('Correo electrónico') ?></label>
                                 <div class="col-sm-9">
                                   <input type="email" class="form-control required email" name="email" />
                                 </div>
@@ -56,7 +56,7 @@ get_header(); ?>
                             <div class="form-group">
                                 <label for="issue" class="col-sm-3 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    Asunto</label>
+                                    <?php _e('Asunto') ?></label>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control required" name="issue" />
                                 </div>
@@ -66,7 +66,7 @@ get_header(); ?>
                             <div class="form-group">
                                 <label for="message" class="col-sm-3 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    Mensaje</label>
+                                    <?php _e('Mensaje') ?></label>
                                 <div class="col-sm-9">
                                 <textarea name="message" class="form-control required" 
                                 rows="5" aria-required="true"></textarea>                                  
@@ -77,7 +77,7 @@ get_header(); ?>
                         <div class="form-group">
                             <div class="col-sm-offset-10 col-sm-2 text-right">
                                 <button type="submit" 
-                                class="btn btn-primary color-bg-blue color-text-white">Enviar</button>
+                                class="btn btn-primary color-bg-blue color-text-white"><?php _e('Enviar') ?></button>
                             </div>
                         </div>
                         </li>
@@ -85,10 +85,10 @@ get_header(); ?>
                     </fieldset>
                     </form>
                     <span id="contact-message" class="hide">
-                        <h4>Se envio correctamente su mensajé, Gracias por contáctarnos!.</h4>
+                        <h4><?php _e('Se envio correctamente su mensajé, Gracias por contáctarnos!.') ?></h4>
                     </span>
                     <span id="contact-message-bad" class="hide">
-                        <h4>I'm Sorry, Error connection or servidor.</h4>
+                        <h4><?php _e("I'm Sorry, Error connection or servidor.") ?></h4>
                     </span>                    
                 </div>
 

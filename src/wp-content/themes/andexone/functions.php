@@ -216,7 +216,7 @@ add_action('wp_ajax_nopriv_ajaxPageContact', 'ajaxPageContact'); // anonimus
  * @return string
  */
 function limit_words( $str, $num='', $append_str='' ) {
-    $num = strlen($str);
+    $num = ($num == '') ? strlen($str) : $num;
     $palabras = preg_split( '/[\s]+/', $str, -1, PREG_SPLIT_OFFSET_CAPTURE );
     if( isset($palabras[$num][1]) ){
       $str = substr( $str, 0, $palabras[$num][1] ) . $append_str;
