@@ -157,7 +157,7 @@ function front_end_gallery($images, $paramssld, $gallery)
 	var lightbox_retinaSuffix = "<?php echo $paramssld['light_box_retinasuffix'];?>";
 	
 				jQuery(document).ready(function(){
-				jQuery("#huge_it_gallery_content_<?php echo $galleryID; ?> a[href$='.jpg'], #huge_it_gallery_content_<?php echo $galleryID; ?> a[href$='.png'], #huge_it_gallery_content_<?php echo $galleryID; ?> a[href$='.gif']").addClass('group1');
+				jQuery("#f<?php echo $galleryID; ?> a[href$='.jpg'], #huge_it_gallery_content_<?php echo $galleryID; ?> a[href$='.png'], #huge_it_gallery_content_<?php echo $galleryID; ?> a[href$='.gif']").addClass('group1');
 				
 				
 				jQuery(".group1").colorbox({rel:'group1'});
@@ -2640,7 +2640,7 @@ jQuery(function(){
 
 				<?php
 				break;
-			case 6:
+                        case 6:
 				?>
 					#huge_it_slideshow_left_gallery_<?php echo $sliderID; ?> {	
 						left:0px;
@@ -3391,6 +3391,15 @@ jQuery(function(){
 
 }); 
 </script>
+    <?php
+        break;
+
+            ///////////////////////////// view 9 (Andex one Slide 1) view ///////////////////////////////////////
+
+        case 7:
+            require_once 'gallery_front_end_view_andexone_1.php';
+    ?>
+
   <?php	  
 	break;
 }

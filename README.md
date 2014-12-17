@@ -81,7 +81,9 @@ ir a : *Dashboard : Aparence : menus :(link:create new menu)*
 * second menu (asignar las paginas correspondientes : proyectos, socios estrátegicos,noticias)
 
 
-####  
+####  Activar y crear widget (noticas relacionadas)
+Para relacionar los post tenemos que activar el widget llamado 
+**Widget AndexOne Post** este widget es exclusivo de la plantilla *AndexOne*
 
 
 

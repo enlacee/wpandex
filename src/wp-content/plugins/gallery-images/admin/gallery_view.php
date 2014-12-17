@@ -619,6 +619,8 @@ jQuery(document).ready(function($){
 									<option <?php if($row->huge_it_sl_effects == '3'){ echo 'selected'; } ?>  value="3">Slider</option>
 									<option <?php if($row->huge_it_sl_effects == '4'){ echo 'selected'; } ?>  value="4">Thumbnails View</option>
                                                                         <option <?php if($row->huge_it_sl_effects == '6'){ echo 'selected'; } ?>  value="6">Justified</option>
+                                                                        <option <?php if($row->huge_it_sl_effects == '7'){ echo 'selected'; } ?>  value="7">Andex Slider 1</option>
+                                                                        <option <?php if($row->huge_it_sl_effects == '8'){ echo 'selected'; } ?>  value="8">Andex Slider 2</option>
 							</select>
 						</li>
 						
