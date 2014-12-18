@@ -24,6 +24,7 @@ function andexone_setup() {
     // This theme uses a custom image size for featured images, displayed on "standard" posts.
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 624, 9999 ); // Unlimited height, soft crop
+    add_image_size( 'thumbnails-doc', 75 );
 }
 add_action( 'after_setup_theme', 'andexone_setup' );
 
@@ -248,14 +249,46 @@ function andexone_entry_meta() {
 */
 
 /**
- *  MY Widget
- * 
+ *  MY Widget Related_Post_Widget
+ *  
+ *  @description register widget, enabled widget in sidebar
  */
-
-// register Foo_Widget widget
-function register_foo_widget() {
-    require_once 'widget/Foo_Widget.php';
-    register_widget( 'Foo_Widget' );
+function register_related_post_widget() {
+    require_once 'widget/Related_Post_Widget.php';
+    register_widget( 'Related_Post_Widget' );
 }
-add_action( 'widgets_init', 'register_foo_widget' );
+add_action( 'widgets_init', 'register_related_post_widget' );
 
+/**
+ *  Image_Widget
+ *  
+ *  @description show gallery enabled widget in sidebar
+ */
+function register_image_widget() {
+    require_once 'widget/Image-Widget.php';
+    register_widget( 'Image_Widget' );
+}
+add_action( 'widgets_init', 'register_image_widget' );
+
+/**
+ *  File_Widget
+ *  
+ *  @description show attachment files enabled widget in sidebar
+ */
+function register_file_widget() {
+    require_once 'widget/File-Widget.php';
+    register_widget( 'File_Widget' );
+}
+add_action( 'widgets_init', 'register_file_widget' );
+
+
+function render_redes() {
+    /*
+    echo WP_PLUGIN_DIR . '/social-media-icons/smc_widget.php';
+    require_once WP_PLUGIN_DIR . '/social-media-icons/smc_widget.php';
+    $w = new SMCWidget();
+    $w->get_SMCWidget();
+    */
+}
+
+//render_redes();
