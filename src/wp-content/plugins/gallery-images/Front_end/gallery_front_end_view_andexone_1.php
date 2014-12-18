@@ -71,7 +71,7 @@
         <?php if ($imagerowstype = 'image'): ?>
             <?php if($row->image_url != ';') { ?>
                 <div class="item">
-                    <a class="group1xx" >
+                    <a class="group1" href="<?php echo $imgurl[0]; ?>">
                     	<?php // echo wp_get_attachment_image( 1 ); ?>
                        <img id="wd-cl-img<?php echo $key; ?>" alt="<?php echo $row->name; ?>" src="<?php echo $imgurl[0]; ?>"/>
                     </a>

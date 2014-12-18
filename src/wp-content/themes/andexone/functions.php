@@ -180,14 +180,14 @@ function ajaxPageContact()
         $br = "<br />";
         $to = array($admin_email, $other);
         $subject = $_REQUEST['issue'];
-        $message = <<<MESS
+        $message = <<<MESSAGE
 from : {$_REQUEST['email']} $br
 name : {$_REQUEST['name']} $br
 company : {$_REQUEST['company']} $br
 $br
 message : {$_REQUEST['message']} 
-MESS;
-echo $message; exit;
+MESSAGE;
+
         $flag = wp_mail( $to, $subject, $message);
     }
 
