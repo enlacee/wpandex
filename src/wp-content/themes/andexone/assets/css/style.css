@@ -107,7 +107,7 @@ body {
 .topbar-middle ul > li {
     display: inline;
     list-style: none;
-    top: -4px;
+    top: -2.5px;
     padding: 0 20px;
     font-size: 20px;
     position: relative;
@@ -646,9 +646,24 @@ body {
     padding: 25px 20px;
 }
 
-
-
-
+/**
+ * page template news
+ */
+.link-search,
+.link-search:hover,
+.link-search:active,
+.link-search:focus {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.see-detail,
+.see-detail:hover,
+.see-detail:active,
+.see-detail:focus {
+    color:#000099;
+    font-weight: none !important;   
+    text-decoration: underline;
+}
 
 
 

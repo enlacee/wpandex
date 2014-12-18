@@ -251,9 +251,11 @@ function andexone_entry_meta() {
  *  MY Widget
  * 
  */
+
 // register Foo_Widget widget
 function register_foo_widget() {
     require_once 'widget/Foo_Widget.php';
     register_widget( 'Foo_Widget' );
 }
 add_action( 'widgets_init', 'register_foo_widget' );
+

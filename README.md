@@ -54,10 +54,10 @@ I so ago in terminal bash:
 
 #### crear las categorias necesarias
 
-Entoncés creamos esta lista de **categorias** los terminos seran en ingles:
+Entoncés creamos esta lista de **categorias** al costado equivalentes en ingles:
 
-    news : noticias
-    slides : slides de home
+    noticias : news
+    slides : slides
     ... :...
 
 
