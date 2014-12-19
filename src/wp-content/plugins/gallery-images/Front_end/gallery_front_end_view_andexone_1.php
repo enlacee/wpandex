@@ -61,7 +61,7 @@
 
 <div class="div-background margin-bottom-25">
     <div id="owl-demo" class="owl-carousel owl-theme">
-        <?php foreach($images as $key=>$row) :  //error_log (print_r($row,true)); var_dump($row); die;
+        <?php foreach($images as $key=>$row) :
             $imgurl = explode(";",$row->image_url);
             $link = $row->sl_url;
             $descnohtml = strip_tags($row->description);

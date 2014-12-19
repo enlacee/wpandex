@@ -40,6 +40,7 @@ class Image_Widget extends WP_Widget {
             // print condicional
             if ($flag) {
                 if ( ! empty( $instance['title'] ) ) {
+                    $args['before_title'] = str_replace('class="', 'class="wg-title-gallery ', $args['before_title']);
                     echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
                     require_once("Image-Widget/front-view.php");    
                 }

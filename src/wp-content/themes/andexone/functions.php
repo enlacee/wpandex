@@ -282,6 +282,17 @@ function register_file_widget() {
 add_action( 'widgets_init', 'register_file_widget' );
 
 
+/**
+ *  Link_Widget
+ *  
+ *  @description show attachment files enabled widget in sidebar
+ */
+function register_link_widget() {
+    require_once 'widget/Link-Widget.php';
+    register_widget( 'Link_Widget' );
+}
+add_action( 'widgets_init', 'register_link_widget' );
+
 function render_redes() {
     /*
     echo WP_PLUGIN_DIR . '/social-media-icons/smc_widget.php';
@@ -291,4 +302,16 @@ function render_redes() {
     */
 }
 
+
 //render_redes();
+
+/**
+ * add metabox theme
+ * require_once 'meta-box/meta-box-theme.php';
+ */
+
+/*
+*
+* add meta-box custom links
+**/
+require_once 'meta-box/meta-box-andexone-links.php';

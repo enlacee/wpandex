@@ -509,14 +509,14 @@ body {
 }
 .wg-boder-black-top {
     border-bottom: 1px dotted black;
-    margin: 20px 15px 10px 0px;
+    margin: 20px 0px 10px 0px;
 
 }
 .wg-boder-black-bottom {
     border-top: 1px dotted black;
     border-bottom: 2px solid white;
     padding: 0 0 25px 0px;
-    margin: 20px 25px 20px 0;
+    margin: 20px 0px 20px 0;
 }
 .wg-boder-white {
     border-bottom: 2px solid white;    
@@ -583,6 +583,13 @@ body {
     text-shadow: 1px 1px 1px #222222;
 }
 .widget_huge_it_gallery_widget .widget-title::before {   
+   content: url(../img/ico-gallery.jpg);
+   margin-right:15px;
+   position: relative;
+   bottom: -3px;
+}
+
+.wg-title-gallery::before {
    content: url(../img/ico-gallery.jpg);
    margin-right:15px;
    position: relative;
