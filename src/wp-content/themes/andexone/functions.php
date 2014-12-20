@@ -36,7 +36,8 @@ add_action( 'after_setup_theme', 'andexone_setup' );
 function register_additional_nav_menus() {
     register_nav_menus( array(
             'primary' => __( 'Primary Menu', 'andexone' ),
-            'secondary' => __( 'Seconday Menu', 'andexone' )		
+            'secondary' => __( 'Seconday Menu', 'andexone' ),
+            'main' => __( 'Main Menu', 'andexone' ),
     ) );
 }
 add_action( 'after_setup_theme', 'register_additional_nav_menus' );
@@ -209,7 +210,7 @@ add_action('wp_ajax_nopriv_ajaxPageContact', 'ajaxPageContact'); // anonimus
  */
 
 /**
- * Limit words custom for views
+ * Limit words custom for views (cut for word)
  * 
  * @param string $str description o content string
  * @param int $num number to cut
@@ -225,6 +226,28 @@ function limit_words( $str, $num='', $append_str='' ) {
     unset( $palabras, $num );
     return trim( $str );
 }
+
+/**
+ * Cut string ok
+ * @param  [type] $cadena [description]
+ * @param  [type] $limite [description]
+ * @param  string $corte  [description]
+ * @param  string $pad    [description]
+ * @return [type]         [description]
+ */
+function limit_string($cadena, $limite, $corte=" ", $pad="...")
+{   
+    if(strlen($cadena) <= $limite)
+        return $cadena;
+    if(false !== ($breakpoint = strpos($cadena, $corte, $limite))) {
+        if($breakpoint < strlen($cadena) - 1) {
+            $cadena = substr($cadena, 0, $breakpoint) . $pad;
+        }
+    }
+    return $cadena;
+    
+}
+
 /*
 function andexone_entry_meta() {
     // Translators: used between list items, there is a space after the comma.
@@ -315,3 +338,9 @@ function render_redes() {
 * add meta-box custom links
 **/
 require_once 'meta-box/meta-box-andexone-links.php';
+
+
+
+
+// -----------------------------------
+//------------------------------------

@@ -56,9 +56,18 @@ I so ago in terminal bash:
 
 Entoncés creamos esta lista de **categorias** al costado equivalentes en ingles:
 
-    noticias : news
-    slides : slides
+    noticias :
+    ejecucion de obras : 
+    proyectos :
+    soluciones :
+    
+    productos
+    
     ... :...
+paginas a crear static:  *title : slug*
+    
+    nosotros :
+    asistencia tecnica : asistencia-tecnica
 
 
 

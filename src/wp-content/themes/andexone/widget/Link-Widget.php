@@ -33,15 +33,13 @@ class Link_Widget extends WP_Widget {
         
         if (is_array($meta_values) && count($meta_values) > 0) {
             $meta_values = $meta_values[0];            
-            $args['before_title'] = str_replace('class="', 'class="wg-title-video ', $args['before_title']);
-            echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
             
             //html
             $li = "";
             $patron = "#\,#"; // ,          
             foreach ($meta_values as $linkString) {
 
-                if (preg_match($patron, $linkString)) {
+                if (preg_match($patron, $linkString) && !empty($linkString)) {
                     $reg = preg_split($patron, $linkString);
                     $li .= <<<LISTA
                 <li><a class="" href="{$reg[1]}" target="_blank" title="{$reg[0]}">{$reg[0]}</a></li>
@@ -50,11 +48,16 @@ LISTA;
                 }
 
             }
-            echo "<div class='textwidget'> ";
-            echo '<div class="wg-boder-black-top"></div>';
-            echo "<ul>{$li}</ul>";
-            echo '<div class="wg-boder-black-bottom"></div>';
-            echo "</div> ";
+            
+            if (!empty($li)) {
+                $args['before_title'] = str_replace('class="', 'class="wg-title-video ', $args['before_title']);
+                echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
+                echo "<div class='textwidget'> ";
+                echo '<div class="wg-boder-black-top"></div>';
+                echo "<ul>{$li}</ul>";
+                echo '<div class="wg-boder-black-bottom"></div>';
+                echo "</div> ";                
+            }
             //require_once("Link-Widget/front-view.php");            
         }
         ///////////////////////////////

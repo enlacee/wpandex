@@ -21,8 +21,7 @@
         $dataPost = (is_array($dataPost) && count($dataPost) > 0) ? $dataPost[0] : false;
     }
 ?>
-<?php if (is_object($dataPost) > 0): ?>
-<?php ?>
+<?php if (is_object($dataPost)): ?>
         <h4 class="text-bold"><?php echo $objCategory->name ?></h4>
         <div class="row news-f1">
             <div class="col-md-6 col-sm-6">

@@ -13,7 +13,7 @@
 get_header(); ?>    
     <div class="wrapper-container">
         <div class="container container-me-page color-bg-white ">
-            <div class="subtitle subtitle-bg-1">
+            <div class="subtitle subtitle-bg-3">
                 <h2><?php _e('Contáctenos') ?></h2>
             </div>
 
@@ -58,7 +58,12 @@ get_header(); ?>
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <?php _e('Asunto') ?></label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control required" name="issue" />
+                                    <select class="form-control required" name="issue">
+                                        <option value="" selected="selected"></option>
+                                        <option value="consultation"><?php _e('Consultas') ?></option>
+                                        <option value="requeriments"><?php _e('Requerimientos') ?></option>
+                                        <option value="information"><?php _e('Iformes') ?></option>
+                                    </select>
                                 </div>
                             </div>
                         </li>
@@ -77,7 +82,7 @@ get_header(); ?>
                         <div class="form-group">
                             <div class="col-sm-offset-10 col-sm-2 text-right">
                                 <button type="submit" 
-                                class="btn btn-primary color-bg-blue color-text-white"><?php _e('Enviar') ?></button>
+                                class="btn btn-primary color-bg-blue color-text-white btn-sky text-bold"><?php _e('Enviar') ?></button>
                             </div>
                         </div>
                         </li>
