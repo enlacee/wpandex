@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for displaying page default
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -11,32 +11,13 @@
  * @subpackage Andex_One
  * @since Andex One 1.0
  */
-
-get_header(); ?>
-
-    <div class="wrapper-container">
-        <div class="page container color-bg-white ">
-         
-            <?php while ( have_posts() ) : the_post(); ?>
-
-                <?php get_template_part( 'content', get_post_format() ); ?>
-
-
-                <br />
-               <!-- <nav class="nav-single clearfix"> 
--                    <span class="pull-lef tnav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentytwelve' ) . '</span> %title' ); ?></span>
--                    <span class="pull-right nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentytwelve' ) . '</span>' ); ?></span>
--                </nav> nav-single -->                
-
-                <?php //comments_template( '', true ); ?>
-            <?php endwhile; // end of the loop. ?>            
-
-        
-        </div><!-- #wrapper-container -->
-    </div><!-- #page -->
-<?php //get_sidebar(); ?>
-<?php get_footer(); ?>
-
-
+ 
+if (in_category('noticias')) {
     
+    include(TEMPLATEPATH.'/single-noticias.php');
 
+} else {
+    
+    include(TEMPLATEPATH.'/single-default.php');
+
+}
