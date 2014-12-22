@@ -37,7 +37,12 @@ class Other_Pages_By_Category_Widget extends WP_Widget {
 
 
         if (is_object($obj_category)) {
-        $dataPost = get_posts(array('category' => $obj_category->cat_ID, 'exclude'=> $post->ID));
+        $dataPost = get_posts(array(
+            'category' => $obj_category->cat_ID,
+            'exclude' => $post->ID,
+            'post_status' => 'publish',
+            'posts_per_page' => 30)
+        );
         $dataPost = (is_array($dataPost) && count($dataPost) > 0) ? $dataPost : false;
         
 // print condicional

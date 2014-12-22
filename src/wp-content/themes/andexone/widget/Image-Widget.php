@@ -36,7 +36,7 @@ class Image_Widget extends WP_Widget {
                     $flag = true; break;
                 }
             }
-
+            $attachments->rewind();
             // print condicional
             if ($flag) {
                 if ( ! empty( $instance['title'] ) ) {

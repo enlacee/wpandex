@@ -12,8 +12,13 @@
 // 02 get data last post
     $dataPost = array();
     if (is_object($objCategory)) {
-        $rDataPost = get_posts(array('category' => $objCategory->cat_ID));
-    }
+        $param = array(
+            'category' => $objCategory->cat_ID,
+            'post_status'=>'publish',
+            'posts_per_page'=> 30
+        );
+        $rDataPost = get_posts($param);
+    } //echo $objCategory->cat_ID; echo "anibal "; var_dump($rDataPost);
 ?>
 <?php if (is_array($rDataPost) && count($rDataPost) > 0): ?>
 <ul class="menu">

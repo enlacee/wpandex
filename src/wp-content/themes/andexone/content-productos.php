@@ -11,6 +11,10 @@
             <div class="subtitle subtitle-bg-1 page">
                 <h2 class="color-text-blue"><?php the_title(); ?></h2>
             </div>
+            <div class="margin-bottom-10">
+                <?php get_template_part( 'single', 'productosslide' ); ?>
+                
+            </div>
         </div>    
 
         <div class="row margin-bottom-60">

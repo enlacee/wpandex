@@ -30,7 +30,7 @@ if (count($dataCategory) > 0) {
 // 02 get data last post
     $dataPost = array();
     if (is_object($objCategory)) {
-        $dataPost = get_posts(array('category' => $objCategory->cat_ID, 'numberposts'=> 6));        
+        $dataPost = get_posts(array('category' => $objCategory->cat_ID,'post_status'=>'publish', 'numberposts'=> 6));        
     }
 ?>
 <?php if (count($dataPost) > 0): ?>

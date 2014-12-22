@@ -12,7 +12,12 @@
 // 02 get data last post
     $dataPost = array();
     if (is_object($objCategory)) {
-        $rDataPost = get_posts(array('category' => $objCategory->cat_ID));
+        $param = array(
+            'category' => $objCategory->cat_ID,
+            'post_status'=>'publish',
+            'posts_per_page'=> 30
+        );
+        $rDataPost = get_posts($param);
     }
 ?>
 <?php if (is_array($rDataPost) && count($rDataPost) > 0): ?>

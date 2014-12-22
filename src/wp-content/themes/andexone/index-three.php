@@ -15,7 +15,7 @@
 // 02 get data last post
     $dataPost = array();
     if (is_object($objCategory)) {
-        $dataPost = get_posts(array('category' => $objCategory->cat_ID, 'numberposts'=> 1));
+        $dataPost = get_posts(array('category' => $objCategory->cat_ID, 'post_status'=>'publish', 'numberposts'=> 1));
         $dataPost = (is_array($dataPost) && count($dataPost) > 0) ? $dataPost[0] : false;
     }
 ?>

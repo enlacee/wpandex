@@ -509,16 +509,16 @@ body {
     
 }
 .boder-dotted-blue-top {
-    border-bottom: 1px dotted #0072b7;
+    border-bottom: 1px dotted black;
     margin: 4px 30px 25px 80px;    
 }
 .boder-dotted-blue-bottom {
-    border-bottom: 1px dotted #0072b7;
+    border-bottom: 1px dotted black;
     margin: 0;    
 }
 
 .boder-dotted-black {
-    border-bottom: 1px dotted #0072b7;
+    border-bottom: 1px dotted black;
     margin: 0;    
 }
 .wg-boder-black-top {
@@ -648,6 +648,11 @@ body {
     padding: 0px 0 0 15px
 }
 
+.sector-footer ul {
+    list-style:square;
+    color:#007F1C; 
+    margin: 10px 18px;
+}
 
 
 .ico-pdf {

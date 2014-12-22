@@ -380,7 +380,20 @@ function render_redes() {
 require_once 'meta-box/meta-box-andexone-links.php';
 
 
+/**
+ * Clear the_content
+ * 
+ * @param type $content
+ * @return type
+ */
+function my_the_content_filter($content) {
+  // bug string break content div
+  $content = str_replace('&#8230;', '', $content);
+  // otherwise returns the database content
+  return $content;
+}
 
+add_filter( 'the_content', 'my_the_content_filter' );
 
 // -----------------------------------
 //------------------------------------

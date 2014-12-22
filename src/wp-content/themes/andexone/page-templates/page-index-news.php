@@ -25,7 +25,7 @@ get_header(); ?>
 
     /***/
     $limit = 3;
-    $count = count(get_posts(array('category' => $category_id)));
+    $count = count(get_posts(array('category' => $category_id, 'post_status'=>'publish')));
 
     if ($count > 0) {
         $total_pages = ceil($count/$limit);
@@ -37,7 +37,7 @@ get_header(); ?>
 
     $start = $limit * $mypage - $limit;
 
-    $dataPost = get_posts(array('category' => $category_id,'offset' => $start,'numberposts'=> $limit));
+    $dataPost = get_posts(array('category' => $category_id,'offset' => $start,'numberposts'=> $limit, 'post_status'=>'publish'));
 ?>
 <?php if (is_array($dataPost) && count($dataPost) > 0): ?>
     <?php foreach ($dataPost as $key => $post): ?>
