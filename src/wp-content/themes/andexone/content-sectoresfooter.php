@@ -77,4 +77,4 @@ var_dump($item_li_soluciones);
 <?php endif; ?>
 </div>
 
-<?php  wp_reset_postdata();?>
+<?php  wp_reset_postdata() ?>

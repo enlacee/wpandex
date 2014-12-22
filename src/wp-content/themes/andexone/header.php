@@ -89,7 +89,8 @@ $list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul
                 </div><!-- end bg-topbar-middle-->
 
                 
-            <?php get_template_part( 'header', 'menu' ); ?>
+            <?php get_template_part( 'header', 'menu' );
+            //include 'header-menu.html';  ?>
             </div><!-- End.header -->
 
 

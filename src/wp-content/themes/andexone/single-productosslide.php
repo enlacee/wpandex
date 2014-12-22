@@ -52,20 +52,42 @@ ITEM;
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
     }
+    /*custom*/
+    a.lSPrev, a.lSNext {
+      color:#999;
+      font-size: 30px;
+      background-image: none;
+      z-index: 1;
+    }   
     </style>
     <script src="<?php echo get_template_directory_uri() ?>/assets/plugins/lightSlider/js/jquery.lightSlider.js"></script> 
     <script>
     $(document).ready(function() {
-        $('#vertical').lightSlider({
-          gallery:true,
-          item:1,
-          vertical:true,
-          verticalHeight:295,
-          vThumbWidth:50,
-          thumbItem:8,
-          thumbMargin:4,
-          slideMargin:0
-        });  
+      /*$('#vertical').lightSlider({
+        gallery:true,
+        item:1,
+        vertical:true,
+        verticalHeight:295,
+        vThumbWidth:50,
+        thumbItem:8,
+        thumbMargin:4,
+        slideMargin:0
+      });
+      */
+        /**/
+      var slider = $('#vertical').lightSlider({
+            gallery:true,
+            item:1,
+            vertical:true,
+            verticalHeight:295,
+            vThumbWidth:50,
+            thumbItem:8,
+            thumbMargin:4,
+            slideMargin:0,
+            prevHtml : '<span class="glyphicon glyphicon-chevron-left"></span>',
+            nextHtml : '<span class="glyphicon glyphicon-chevron-right"></span>',
+            addClass : ''
+      });        
       });
     </script>
     
