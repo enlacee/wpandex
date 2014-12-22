@@ -211,11 +211,10 @@ function ajaxPageContact()
         $to = array($admin_email, $other);
         $subject = $_REQUEST['issue'];
         $message = <<<MESSAGE
-from : {$_REQUEST['email']} $br
-name : {$_REQUEST['name']} $br
-company : {$_REQUEST['company']} $br
-$br
-message : {$_REQUEST['message']} 
+from : {$_REQUEST['email']}
+name : {$_REQUEST['name']}
+company : {$_REQUEST['company']}
+message : {$_REQUEST['message']}
 MESSAGE;
 
         $flag = wp_mail( $to, $subject, $message);
