@@ -59,6 +59,34 @@ function andexone_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+	register_sidebar( array(
+		'name' => __( 'Second Sidebar for categories', 'andexone' ),
+		'id' => 'sidebar-2',
+		'description' => __( 'Appears usefull for categories : soluciones, productos', 'andexone' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Third Sidebar for category sector', 'andexone' ),
+		'id' => 'sidebar-3',
+		'description' => __( 'Appears usefull for category sector', 'andexone' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Footer Sidebar for categories', 'andexone' ),
+		'id' => 'sidebar-4',
+		'description' => __( 'Appears usefull for categories: soluciones, productos, sectores', 'andexone' ),
+		'before_widget' => '<aside id="%1$s" class="widget-footer %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h4 class=" ">',
+		'after_title' => '</h4>',
+	) );        
+        
 }
 add_action( 'widgets_init', 'andexone_widgets_init' );
 
@@ -315,6 +343,18 @@ function register_link_widget() {
     register_widget( 'Link_Widget' );
 }
 add_action( 'widgets_init', 'register_link_widget' );
+
+/**
+ *  Other_Pages_By_Category_Widget
+ *  
+ *  @description show other pages by category
+ */
+function register_other_pages_by_category_widget() {
+    require_once 'widget/Other_Pages_By_Category_Widget.php';
+    register_widget( 'Other_Pages_By_Category_Widget' );
+}
+add_action( 'widgets_init', 'register_other_pages_by_category_widget' );
+
 
 function render_redes() {
     /*

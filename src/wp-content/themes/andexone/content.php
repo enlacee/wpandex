@@ -11,10 +11,10 @@
 
             <div class="row">
                 <div class="subtitle subtitle-bg-2 page">
-                    <h2 class="color-text-blue">NOTICIAS</h2>
+                    <h2 class="color-text-blue"><?php _e('NOTICIAS') ?></h2>
                 </div>
                 <div class="pull-right">
-                    <a href="<?php echo esc_url( home_url( '/noticias' ) ); ?>" class="btn-see-news">boton ver noticias</a>
+                    <a href="<?php echo esc_url( home_url( '/noticias' ) ); ?>" class="btn-see-news"><?php _e('boton ver noticias') ?></a>
                 </div>            
             </div>
 
@@ -45,7 +45,7 @@
             <div class="boder-dotted-blue-bottom "></div>
 
             <div class="pull-left " style="margin-top: 10px">
-                <a href="<?php echo esc_url( home_url( '/noticias' ) ); ?>" class="btn-see-news">boton ver noticias</a>                
+                <a href="<?php echo esc_url( home_url( '/noticias' ) ); ?>" class="btn-see-news"><?php _e('boton ver noticias') ?></a>                
             </div>
                         
             <div class="clearfix"></div>

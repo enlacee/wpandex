@@ -636,6 +636,17 @@ body {
    font-size: 15px;
    line-height: 15px;    
 }
+.widget-footer {
+    padding: 10px 10px 30px 40px;
+    margin: 0 0 15px 0;
+    background-color: #EFEFEF;
+}
+
+.widget-footer ul {
+    list-style:square;
+    color:#ccc;
+    padding: 0px 0 0 15px
+}
 
 
 

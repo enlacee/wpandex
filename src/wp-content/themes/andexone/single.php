@@ -16,8 +16,14 @@ if (in_category('noticias')) {
     
     include(TEMPLATEPATH.'/single-noticias.php');
 
-} else {
+} elseif (in_category('productos') 
+        || in_category('soluciones')
+        || in_category('sectores'))
+{    
+    include(TEMPLATEPATH.'/single-productos.php');
     
+} else {
+   
     include(TEMPLATEPATH.'/single-default.php');
 
 }
