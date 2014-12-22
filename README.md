@@ -98,7 +98,12 @@ Para relacionar los post tenemos que activar el widget llamado
 
 
 
-
+### Administrador de contenido:
+Ingresar al administrador wp-admin/  
+    
+## Editar post
+Dashboard : post : editar *editar post*
+Dashboard : pages : editar *editar paginas*
     
 
 
