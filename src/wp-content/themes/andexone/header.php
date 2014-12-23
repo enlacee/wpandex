@@ -33,8 +33,10 @@ $primaryMenu = wp_nav_menu($menuParameters);
 $list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul>$#' ), '', $primaryMenu );
 ?>
                             <ul class="loginbar pull-right">
-                                <?php echo $list ?>
-                                <li class=""><a href="#">español</a></li>
+                                <?php echo $list ?>                                
+                                <li>
+                                    <?php do_action('icl_language_selector'); ?>
+                                </li>
                             </ul>
                             <!-- <ul class="loginbar pull-right">
                                 <li><a href="index.html">inicio</a></li>                                
