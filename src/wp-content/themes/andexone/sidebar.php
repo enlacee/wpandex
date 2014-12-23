@@ -16,7 +16,7 @@ if (in_category('productos') || in_category('soluciones')) {
     
     $sidebar_select = 'sidebar-2';
     
-} elseif (in_category('sectores')) {
+} elseif (in_category('sectores') || in_category('setores')) {
     
     $sidebar_select = 'sidebar-3';
  

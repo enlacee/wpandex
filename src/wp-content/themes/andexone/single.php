@@ -20,7 +20,7 @@ if (in_category('noticias')) {
     
     include(TEMPLATEPATH.'/single-productos.php');
     
-} elseif (in_category('sectores')) {
+} elseif (in_category('sectores') || in_category('setores')) {
     
     include(TEMPLATEPATH.'/single-sectores.php');
     
