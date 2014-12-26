@@ -34,7 +34,7 @@ ECHO "END..<BR>";
   // Get the nav menu based on $menu_name (same as 'theme_location' or 'menu' arg to wp_nav_menu)
     // This code based on wp_nav_menu's code to get Menu ID from menu slug
 
-
+/*
 	$locations = get_nav_menu_locations();
 	var_dump($locations);
 
@@ -60,3 +60,24 @@ var_dump($menu_items);
     }
     // $menu_list now ready to output
     echo $menu_list;
+*/
+?>
+
+<?php
+
+
+$element_id = $post->ID;
+ECHO ICL_LANGUAGE_CODE;
+VAR_DUMP(get_post(icl_object_id($element_id, 'post', false,ICL_LANGUAGE_CODE)));
+VAR_DUMP(get_post_meta(icl_object_id($element_id,'post',false,ICL_LANGUAGE_CODE), '_sample_key', true));
+echo "<hr>";
+var_dump(wpml_get_language_information($element_id));
+echo "<hr>";
+global $sitepress;
+var_dump($sitepress->get_current_language());
+//var_dump(get_class_methods($sitepress));
+
+$language_details = $sitepress->get_language_details(ICL_LANGUAGE_CODE);
+var_dump($language_details);
+echo "<hr>";
+var_dump(ICL_LANGUAGE_CODE);

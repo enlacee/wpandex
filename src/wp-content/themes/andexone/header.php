@@ -8,6 +8,7 @@
  * @subpackage Andex One
  * @since Andex One 1.0
  */
+// include 'test.php';
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
@@ -83,7 +84,7 @@ $list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul
                                 <!--<img src="<?php echo get_template_directory_uri() ?>/assets/img/contactenos.jpg" alt="contactenos" />-->
                                 <strong>
                                 <span class="glyphicon glyphicon-earphone color-text-blue ico-contact" aria-hidden="true"></span>
-                                <span class="color-text-blue">Contáctenos al</span>
+                                <span class="color-text-blue"><?php _e('Contact us at', 'andexone') ?></span>
                                 </strong> (511) <strong>436-7442</strong>
                             </div>
                         </div>

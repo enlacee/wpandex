@@ -14,7 +14,7 @@ get_header(); ?>
     <div class="wrapper-container">
         <div class="container container-me-page color-bg-white ">
             <div class="subtitle subtitle-bg-3">
-                <h2><?php _e('Contáctenos') ?></h2>
+                <h2><?php _e('Contact us', 'andexone') ?></h2>
             </div>
 
             <div class="row margin-bottom-60">
@@ -26,7 +26,7 @@ get_header(); ?>
                             <div class="form-group">
                                 <label for="name" class="col-sm-3 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <?php _e('Nombre') ?></label>
+                                    <?php _e('Name', 'andexone') ?></label>
                                 <div class="col-sm-9">
                                   <input type="text" class="form-control required" name="name" />
                                 </div>
@@ -36,7 +36,7 @@ get_header(); ?>
                             <div class="form-group">
                                 <label for="company" class="col-sm-3 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <?php _e('Empresa') ?></label>
+                                    <?php _e('Company', 'andexone') ?></label>
                                 <div class="col-sm-9">
                                   <input type="text" class="form-control" name="company" />
                                 </div>
@@ -46,7 +46,7 @@ get_header(); ?>
                             <div class="form-group">
                                 <label for="email" class="col-sm-3 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <?php _e('Correo electrónico') ?></label>
+                                    <?php _e('Email', 'andexone') ?></label>
                                 <div class="col-sm-9">
                                   <input type="email" class="form-control required email" name="email" />
                                 </div>
@@ -56,13 +56,13 @@ get_header(); ?>
                             <div class="form-group">
                                 <label for="issue" class="col-sm-3 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <?php _e('Asunto') ?></label>
+                                    <?php _e('Issue', 'andexone') ?></label>
                                 <div class="col-sm-9">
                                     <select class="form-control required" name="issue">
                                         <option value="" selected="selected"></option>
-                                        <option value="consultation"><?php _e('Consultas') ?></option>
-                                        <option value="requeriments"><?php _e('Requerimientos') ?></option>
-                                        <option value="information"><?php _e('Iformes') ?></option>
+                                        <option value="consultation"><?php _e('Consultation', 'andexone') ?></option>
+                                        <option value="requeriments"><?php _e('Requeriments', 'andexone') ?></option>
+                                        <option value="information"><?php _e('Information', 'andexone') ?></option>
                                     </select>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@ get_header(); ?>
                             <div class="form-group">
                                 <label for="message" class="col-sm-3 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <?php _e('Mensaje') ?></label>
+                                    <?php _e('Mensaje', 'andexone') ?></label>
                                 <div class="col-sm-9">
                                 <textarea name="message" class="form-control required" 
                                 rows="5" aria-required="true"></textarea>                                  
@@ -82,7 +82,7 @@ get_header(); ?>
                         <div class="form-group">
                             <div class="col-sm-offset-10 col-sm-2 text-right">
                                 <button type="submit" 
-                                class="btn btn-primary color-bg-blue color-text-white btn-sky text-bold"><?php _e('Enviar') ?></button>
+                                class="btn btn-primary color-bg-blue color-text-white btn-sky text-bold"><?php _e('Send', 'andexone') ?></button>
                             </div>
                         </div>
                         </li>
@@ -90,10 +90,10 @@ get_header(); ?>
                     </fieldset>
                     </form>
                     <span id="contact-message" class="hide">
-                        <h4><?php _e('Se envio correctamente su mensajé, Gracias por contáctarnos!.') ?></h4>
+                        <h4><?php _e('Your message was successfully sent, please contact us', 'andexone') ?>.</h4>
                     </span>
                     <span id="contact-message-bad" class="hide">
-                        <h4><?php _e("I'm Sorry, Error connection or servidor.") ?></h4>
+                        <h4><?php _e("I'm Sorry, Error connection or servidor", 'andexone') ?>.</h4>
                     </span>                    
                 </div>
 

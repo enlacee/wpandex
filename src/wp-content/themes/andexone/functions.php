@@ -396,3 +396,34 @@ add_filter( 'the_content', 'my_the_content_filter' );
 
 // -----------------------------------
 //------------------------------------
+//
+/**
+ * Get entry in to language specified
+ * 
+ * @param  int $id_post id post
+ * @param  string $post_type type 'post' or 'page'
+ * @param  string $lang_code code international
+ * @return mix null or array
+ */
+function get_post_by_language($id_post, $post_type = 'post', $lang_code )
+{
+    $return = null;
+
+    if (function_exists('icl_object_id')) {
+
+        $original_ID = icl_object_id( $id_post, $post_type, false, $lang_code );
+
+        if (!is_null($original_ID) && !empty($original_ID)) {
+
+            $data_post = get_post($original_ID);
+
+            if (!is_null($data_post)) {
+
+                $return = $data_post;
+                //wp_reset_postdata();
+            }
+        }
+    }
+
+    return $return;
+}

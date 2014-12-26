@@ -32,7 +32,7 @@
             <img align="right" class="img-responsive  img-center" src="<?php echo get_template_directory_uri() ?>/assets/img/banner_ejecucion_obras.jpg" alt="" />
             </a>
         <?php endif; ?>
-        <a href="<?php echo get_permalink($dataPost->ID) ?>" class="btn-main-gray">más información</a>
+        <a href="<?php echo get_permalink($dataPost->ID) ?>" class="btn-main-gray"><?php _e('more information', 'andexone') ?></a>
     </div>
 <?php else: ?>
     <h4 class="text-bold">&nbsp;</h4>

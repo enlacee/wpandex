@@ -29,7 +29,7 @@
         <div class="btn-see-project">            
             <span class="btn-text-see-project color-text-green text-bold">
                 <a href="<?php echo get_permalink($dataPost->ID) ?>" alt="<?php echo $dataPost->post_title; ?>">
-                ver soluciones</a>
+                <?php _e('see solutions','andexone') ?></a>
             </span>
             <img class="" style="margin: 0 0 0 20px" src="<?php echo get_template_directory_uri() ?>/assets/img/btn-see-solution.png" />
         </div>

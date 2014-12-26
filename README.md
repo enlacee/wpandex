@@ -55,7 +55,8 @@ I so ago in terminal bash:
 #### crear las categorias necesarias
 
 Entoncés creamos esta lista de **categorias** al costado equivalentes en ingles:
-
+    
+    slides |slides.en|slides.pt: categoria creada para almacenar los banners en home
     noticias :
     ejecucion de obras : 
     proyectos :
@@ -67,7 +68,11 @@ Entoncés creamos esta lista de **categorias** al costado equivalentes en ingles
 paginas a crear static:  *title : slug*
     
     nosotros :
-    asistencia tecnica : asistencia-tecnica
+        slug = nosotros
+    asistencia tecnica : 
+        slug = asistencia-tecnica
+
+#### afters wpml translator
 
 
 

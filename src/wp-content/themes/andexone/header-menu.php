@@ -19,6 +19,46 @@ if (is_home()) {
     $my_menu = 'asistencia-tecnica';
 }
 
+
+$my_new_name = 'nosotros';
+$my_new = get_posts(array('name' => $my_new_name,'post_type' => 'page','post_status' => 'publish','numberposts' => 1));
+$my_new = (is_array($my_new) && count($my_new)>0) ? $my_new[0] : false;
+if (ICL_LANGUAGE_CODE == 'es') {
+    $dat = get_post_by_language($my_new->ID, 'page', ICL_LANGUAGE_CODE);
+    $my_new = (is_object($dat)) ? $dat : $my_new;    
+} elseif (ICL_LANGUAGE_CODE == 'en') {
+    $dat = get_post_by_language($my_new->ID, 'page', ICL_LANGUAGE_CODE);
+    $my_new = (is_object($dat)) ? $dat : $my_new;
+} elseif (ICL_LANGUAGE_CODE == 'pt') {
+    $dat = get_post_by_language($my_new->ID, 'page', ICL_LANGUAGE_CODE);
+    $my_new = (is_object($dat)) ? $dat : $my_new;
+}
+
+$my_02_name = 'asistencia-tecnica';
+$my_02 = get_posts(array('name' => $my_02_name,'post_type' => 'page','post_status' => 'publish','numberposts' => 1));
+$my_02 = (is_array($my_02) && count($my_02)>0) ? $my_02[0] : false;
+if (ICL_LANGUAGE_CODE == 'es') {
+    $dat = get_post_by_language($my_02->ID, 'page', ICL_LANGUAGE_CODE);
+    $my_02 = (is_object($dat)) ? $dat : $my_02;    
+} elseif (ICL_LANGUAGE_CODE == 'en') {
+    $dat = get_post_by_language($my_02->ID, 'page', ICL_LANGUAGE_CODE);
+    $my_02 = (is_object($dat)) ? $dat : $my_02;
+} elseif (ICL_LANGUAGE_CODE == 'pt') {
+    $dat = get_post_by_language($my_02->ID, 'page', ICL_LANGUAGE_CODE);
+    $my_02 = (is_object($dat)) ? $dat : $my_02;
+}
+
+
+//echo get_url_for_language($my_new->ID, ICL_LANGUAGE_CODE);
+
+//var_dump($my_new);
+
+//$original_ID = icl_object_id( $my_posts[0]->ID, 'page', false, 'en' );
+
+//$a = get_post_by_language($my_posts[0]->ID, 'page', 'en');
+
+//echo "noticias en ingles";
+//var_dump($a);
 ?>
     <div class="container"><!-- submenu-->
         <div class="navbar-default main-menu">
@@ -34,21 +74,26 @@ if (is_home()) {
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="<?php echo ($my_menu == 'nosotros') ? 'active' : '' ?>">
-                        <a href="<?php echo esc_url( home_url( '/nosotros' ) ); ?>"><?php _e('NOSOTROS') ?></a>
+                        
+                        <a href="<?php echo (!is_null($my_new->ID)) ? get_permalink($my_new->ID) : '#'; ?>"><?php _e('US', 'andexone') ?></a>
+                        <!--<a href="<?php echo esc_url( home_url( '/nosotros' ) ); ?>"><?php _e('US', 'andexone') ?></a>-->
                     </li>
                     <li class="dropdown mega-menu <?php echo ($my_menu == 'soluciones') ? 'active' : '' ?>">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php _e('SOLUCIONES') ?></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php _e('SOLUTIONS', 'andexone') ?></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="row">
                                     <div class="col-sm-4 col-md-5">
                                         <h4 class="title-mega-menu">
-                                            CONOCE <br /> <span class="title-mega-menu-tiny-gray">NUESTRAS</span>
-                                            <span class="color-text-blue">INNOVADORAS</span><br /> <span class="color-text-black">SOLUCIONES</span><br />
-                                            <span class="title-mega-menu-tiny-gray">EN</span>
-                                            <span>INGENIERÍA</span>
-                                            <span  class="title-mega-menu-tiny-gray">DE</span><br />
-                                            <span class="color-text-blue">GEOSINTÉTICOS</span></h4>
+                                            <?php _e('DISCOVER', 'andexone') ?> <br /> 
+                                            <span class="title-mega-menu-tiny-gray"><?php _e('OUR', 'andexone') ?></span>
+                                            <span class="color-text-blue"><?php _e('INNOVATIVE', 'andexone') ?></span><br /> 
+                                            <span class="color-text-black"><?php _e('SOLUTIONS', 'andexone') ?></span><br />
+                                            <span class="title-mega-menu-tiny-gray"><?php _e('IN', 'andexone') ?></span>
+                                            <span><?php _e('ENGINEERING', 'andexone') ?></span> 
+                                            <span  class="title-mega-menu-tiny-gray"><?php _e('OF', 'andexone') ?></span><br />
+                                            <span class="color-text-blue"><?php _e('GEOSYNTHETICS', 'andexone') ?></span>
+                                        </h4>
                                     </div>
                                     <div class="col-sm-8 col-md-7">
                                         <div class="row">
@@ -66,18 +111,21 @@ if (is_home()) {
                     </li>
                     
                     <li class="dropdown mega-menu <?php echo ($my_menu == 'productos') ? 'active' : '' ?>" >
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php _e('PRODUCTOS') ?></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php _e('PRODUCE', 'andexone') ?></a>
                         <ul class="dropdown-menu">
                                 <li>
                                     <div class="row">
                                         <div class="col-sm-4 col-md-6">
-                                        <h4 class="title-mega-menu">
-                                            CONOCE <br /> <span class="title-mega-menu-tiny-gray">NUESTRAS</span>
-                                            <span class="color-text-blue">INNOVADORAS</span><br /> <span class="color-text-black">SOLUCIONES</span><br />
-                                            <span class="title-mega-menu-tiny-gray">EN</span>
-                                            <span>INGENIERÍA</span>
-                                            <span  class="title-mega-menu-tiny-gray">DE</span><br />
-                                            <span class="color-text-blue">GEOSINTÉTICOS</span></h4>
+                                            <h4 class="title-mega-menu">
+                                                <?php _e('DISCOVER', 'andexone') ?> <br /> 
+                                                <span class="title-mega-menu-tiny-gray"><?php _e('OUR', 'andexone') ?></span>
+                                                <span class="color-text-blue"><?php _e('INNOVATIVE', 'andexone') ?></span><br /> 
+                                                <span class="color-text-black"><?php _e('SOLUTIONS', 'andexone') ?></span><br />
+                                                <span class="title-mega-menu-tiny-gray"><?php _e('IN', 'andexone') ?></span>
+                                                <span><?php _e('ENGINEERING', 'andexone') ?></span> 
+                                                <span  class="title-mega-menu-tiny-gray"><?php _e('OF', 'andexone') ?></span><br />
+                                                <span class="color-text-blue"><?php _e('GEOSYNTHETICS', 'andexone') ?></span>
+                                            </h4>
                                             <p class="topbar-middle-devider"></p>
                                         </div>
                                         <div class="col-sm-8 col-md-6">
@@ -98,19 +146,22 @@ if (is_home()) {
                     </li>
 
                     <li class="dropdown mega-menu <?php echo ($my_menu == 'sectores') ? 'active' : '' ?>" ><!-- submenu-->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php _e('SECTORES') ?></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php _e('SECTORS', 'andexone') ?></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="row">
                                     <div class="col-sm-4 col-md-6">
                                         <h4 class="title-mega-menu">
-                                            CONOCE <br /> <span class="title-mega-menu-tiny-gray">NUESTRAS</span>
-                                            <span class="color-text-blue">INNOVADORAS</span><br /> <span class="color-text-black">SOLUCIONES</span><br />
-                                            <span class="title-mega-menu-tiny-gray">EN</span>
-                                            <span>INGENIERÍA</span>
-                                            <span  class="title-mega-menu-tiny-gray">DE</span><br />
-                                            <span class="color-text-blue">GEOSINTÉTICOS</span></h4>
-                                            <p class="topbar-middle-devider"></p>
+                                            <?php _e('DISCOVER', 'andexone') ?> <br /> 
+                                            <span class="title-mega-menu-tiny-gray"><?php _e('OUR', 'andexone') ?></span>
+                                            <span class="color-text-blue"><?php _e('INNOVATIVE', 'andexone') ?></span><br /> 
+                                            <span class="color-text-black"><?php _e('SOLUTIONS', 'andexone') ?></span><br />
+                                            <span class="title-mega-menu-tiny-gray"><?php _e('IN', 'andexone') ?></span>
+                                            <span><?php _e('ENGINEERING', 'andexone') ?></span> 
+                                            <span  class="title-mega-menu-tiny-gray"><?php _e('OF', 'andexone') ?></span><br />
+                                            <span class="color-text-blue"><?php _e('GEOSYNTHETICS', 'andexone') ?></span>
+                                        </h4>
+                                        <p class="topbar-middle-devider"></p>
                                     </div>
                                     <div class="col-sm-8 col-md-6">
 
@@ -128,7 +179,8 @@ if (is_home()) {
                     </li>
                         
                     <li class="<?php echo ($my_menu == 'asistencia-tecnica') ? 'active' : '' ?>">
-                        <a href="<?php echo esc_url( home_url( '/asistencia-tecnica' ) ); ?>"><?php _e('ASISTENCIA TÉCNICA') ?></a>
+                        <a href="<?php echo (!is_null($my_02->ID)) ? get_permalink($my_02->ID) : '#'; ?>"><?php _e('TECHNICAL ASSISTANCE', 'andexone') ?></a>
+                        <!--<a href="<?php echo esc_url( home_url( '/asistencia-tecnica' ) ); ?>"><?php _e('TECHNICAL ASSISTANCE') ?></a>-->
                     </li>
                 </ul>
             </div>

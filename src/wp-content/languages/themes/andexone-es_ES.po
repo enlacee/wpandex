@@ -1,0 +1,131 @@
+# Translation of Andex One to Spanish (Spain)
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-12-25 19:37-0500\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"Project-Id-Version: Andes One\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#: header.php:86
+msgid "Contact us at"
+msgstr "Contáctenos al"
+
+#: footer.php:14
+msgid "Andex © .All rights reserved"
+msgstr "Andex © .Todos los derechos reservados"
+
+# # ---------------------------------------------
+# # template contact
+# # ---------------------------------------------
+#: page-templates/page-contact.php:17
+msgid "Contact us"
+msgstr "Contáctenos"
+
+#: page-templates/page-contact.php:29
+msgid "Name"
+msgstr "Nombre"
+
+#: page-templates/page-contact.php:39
+msgid "Company"
+msgstr "Empresa"
+
+#: page-templates/page-contact.php:48
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: page-templates/page-contact.php:59
+msgid "Issue"
+msgstr "Asunto"
+
+#: page-templates/page-contact.php:63
+msgid "Consultation"
+msgstr "Consultas"
+
+#: page-templates/page-contact.php:64
+msgid "Requeriments"
+msgstr "Requerimientos"
+
+#: page-templates/page-contact.php:65
+msgid "Information"
+msgstr "Informes"
+
+#: page-templates/page-contact.php:74
+msgid "Message"
+msgstr "Mensaje"
+
+msgid "Send"
+msgstr "Enviar"
+
+#: page-templates/page-contact.php:93
+msgid "Your message was successfully sent, please contact us"
+msgstr "Se envio correctamente su mensajé, Gracias por contáctarnos"
+
+#: page-templates/page-contact.php:94
+msgid "I'm Sorry, Error connection or servidor"
+msgstr "Lo sentimos en estos momentos no podemos enviar email"
+
+# # ---------------------------------------------
+# # home
+# # ---------------------------------------------
+#: header-menu.php:37
+msgid "US"
+msgstr "NOSOTROS"
+
+#: header-menu.php:46
+msgid "DISCOVER"
+msgstr "CONOCE"
+
+#: header-menu.php:47
+msgid "OUR"
+msgstr "NUESTRAS"
+
+#: header-menu.php:48
+msgid "INNOVATIVE"
+msgstr "INNOVADORAS"
+
+#: header-menu.php:49
+msgid "SOLUTIONS"
+msgstr "SOLUCIONES"
+
+#: header-menu.php:93
+msgid "ENGINEERING"
+msgstr "INGENIERÍA"
+
+#: header-menu.php:50
+msgid "IN"
+msgstr "EN"
+
+msgid "OF"
+msgstr "DE"
+
+msgid "GEOSYNTHETICS"
+msgstr "GEOSINTÉTICOS"
+
+msgid "TECHNICAL ASSISTANCE"
+msgstr "ASISTENCIA TÉCNICA"
+
+msgid "PRODUCE"
+msgstr "PRODUCTOS"
+
+msgid "SECTORS"
+msgstr "SECTORES"
+
+# #
+# #
+msgid "see news"
+msgstr "ver noticias"
+
+msgid "more information"
+msgstr "más información"
+
+msgid "see projects"
+msgstr "ver proyectos"
+
+msgid "see solutions"
+msgstr "ver soluciones"
