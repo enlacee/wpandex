@@ -57,9 +57,9 @@ I so ago in terminal bash:
 Entoncés creamos esta lista de **categorias** al costado equivalentes en ingles:
     
     slides |slides.en|slides.pt: categoria creada para almacenar los banners en home
-    noticias :
-    ejecucion de obras : 
-    proyectos :
+    noticias | news | noticias.pt:
+    ejecucion de obras |ejecucion de obras.en | ejecucion de obras.pt : 
+    proyectos |projects | projetos:
     soluciones :
     
     productos
