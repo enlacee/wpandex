@@ -8,12 +8,36 @@
  */
 
  $default = array('orderby' => 'id', 'order' => 'ASC', 'style'=> 'none',
-     'exclude'=> 1, 'number' => 3, 'echo' => 0, );
+     'exclude'=> false, 'number' => false, 'echo' => 0, );
  
 // 01 get fisrt category
     $dataCategory = get_categories($default);    
-    $objCategory = (count($dataCategory) > 0) ? $dataCategory[0] : false;
-    
+    $objCategory = false;
+
+    if (count($dataCategory) > 0) {
+        //search category : slides
+        if (ICL_LANGUAGE_CODE == 'es') {
+            foreach ($dataCategory as $key => $obj) {
+                if ($obj->slug == 'noticias') {
+                    $objCategory = $obj; break;
+                }
+            }
+        } elseif(ICL_LANGUAGE_CODE == 'en') {
+            foreach ($dataCategory as $key => $obj) {
+                if ($obj->slug == 'news') {
+                    $objCategory = $obj; break;
+                }
+            }
+        } elseif(ICL_LANGUAGE_CODE == 'pt-br') {
+            foreach ($dataCategory as $key => $obj) {
+                if ($obj->slug == 'noticias-pt') {
+                    $objCategory = $obj; break;
+                }
+            }
+        }
+
+    }    
+
 // 02 get data last post
     $dataPost = array();
     if (is_object($objCategory)) {
@@ -22,7 +46,7 @@
     }
 ?>
 <?php if (is_object($dataPost)): ?>
-        <h4 class="text-bold"><?php echo $objCategory->name ?></h4>
+        <h4 class="text-bold"><?php echo __($objCategory->name, 'andexone') ?></h4>
         <div class="row news-f1">
             <div class="col-md-6 col-sm-6">
                 <?php if (has_post_thumbnail($dataPost->ID)): ?>

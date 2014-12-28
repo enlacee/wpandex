@@ -51,21 +51,7 @@ get_header(); ?>
                     </div>
 
                     <div class="col-md-4 col-sm-6  news">
-                        <h4 class="text-bold">&nbsp;</h4>
-                        <div class="row news-f3">
-                            <div class="col-md6 clearfix" style="padding-bottom:8px">
-                                <a href="<?php echo esc_url( home_url( '/asistencia-tecnica' ) ); ?>">
-                                    <img align="right" class="img-responsive"  src="<?php echo get_template_directory_uri() ?>/assets/img/banner_asistencia_tecnica.jpg" />
-                                </a>
-                            </div>
-
-                            <div class="col-md6 clearfix">
-                                <a href="<?php echo esc_url( home_url( '/preguntas-frecuentes' ) ); ?>">
-                                    <img align="right" class="img-responsive"  src="<?php echo get_template_directory_uri() ?>/assets/img/banner_preguntas_frecuentes.jpg" />
-                                </a>
-                            </div>
-                        </div>
-
+                        <?php get_template_part( 'index', 'five' ); ?>
                     </div>
                 </div>
 

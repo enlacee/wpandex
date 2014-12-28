@@ -8,9 +8,35 @@
  */
 
 // 01 get fisrt category
-    
-    $slug = 'proyectos';
-    $objCategory = get_category_by_slug( $slug );
+    $default = array('orderby' => 'id', 'order' => 'ASC', 'style'=> 'none',
+     'exclude'=> false, 'number' => false, 'echo' => 0, );
+
+    $dataCategory = get_categories($default);    
+    $objCategory = false;
+
+    if (count($dataCategory) > 0) {
+        //search category : slides
+        if (ICL_LANGUAGE_CODE == 'es') {
+            foreach ($dataCategory as $key => $obj) {
+                if ($obj->slug == 'proyectos') {
+                    $objCategory = $obj; break;
+                }
+            }
+        } elseif(ICL_LANGUAGE_CODE == 'en') {
+            foreach ($dataCategory as $key => $obj) {
+                if ($obj->slug == 'projects') {
+                    $objCategory = $obj; break;
+                }
+            }
+        } elseif(ICL_LANGUAGE_CODE == 'pt-br') {
+            foreach ($dataCategory as $key => $obj) {
+                if ($obj->slug == 'projetos') {
+                    $objCategory = $obj; break;
+                }
+            }
+        }
+
+    }  
 
 // 02 get data last post
     $dataPost = array();

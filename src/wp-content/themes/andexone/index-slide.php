@@ -12,26 +12,37 @@
 // 01 get fisrt category
 $dataCategory = get_categories($default);    
 $objCategory = false;
+
 if (count($dataCategory) > 0) {
     //search category : slides
-    $flag = false;
-    foreach ($dataCategory as $key => $obj) {
-        if ($obj->slug == 'slides') {
-            $objCategory = $obj;
-            $flag = true;
-        }        
+    if (ICL_LANGUAGE_CODE == 'es') {
+        foreach ($dataCategory as $key => $obj) {
+            if ($obj->slug == 'slides') {
+                $objCategory = $obj; break;
+            }
+        }
+    } elseif(ICL_LANGUAGE_CODE == 'en') {
+        foreach ($dataCategory as $key => $obj) {
+            if ($obj->slug == 'slides-en') {
+                $objCategory = $obj; break;
+            }
+        }
+    } elseif(ICL_LANGUAGE_CODE == 'pt-br') {
+        foreach ($dataCategory as $key => $obj) {
+            if ($obj->slug == 'slides-pt') {
+                $objCategory = $obj; break;
+            }
+        }
     }
-    if ($flag == false) {
-        $objCategory = $dataCategory[0];
-    }
+
 }
-   
     
 // 02 get data last post
     $dataPost = array();
     if (is_object($objCategory)) {
         $dataPost = get_posts(array('category' => $objCategory->cat_ID,'post_status'=>'publish', 'numberposts'=> 6));        
     }
+    //var_dump($dataPost);
 ?>
 <?php if (count($dataPost) > 0): ?>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -67,5 +78,7 @@ if (count($dataCategory) > 0) {
         <span class="sr-only">Next</span>
       </a>
     </div><!--endslider-->
+<?php else: ?>
+<p>not found data.</p>
 <?php endif; ?>
 
