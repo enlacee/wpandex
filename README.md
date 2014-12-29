@@ -114,6 +114,22 @@ Dashboard : pages : editar *editar paginas*
 
 
 
+### Preguntas y respuestas
+
+* establecer la plantilla : Page Questions and Answer
+
+Copiar y pegar este formato para preguntas y respuestas, ya que tiene una validacion en back y front para su correcto
+funcionamiento. 
+
+    <h3>Question number one?</h3>
+    Answer number one that solution is  very very  usefull for that people  you now  this moment we count with multiples tecnologies main  the evolution of  energy recycle but this thecnologie sopport multiple environment
+    <div class="read-more"><button class="btn btn-primary">read more</button></div>
+    <div class="hide">more content about question number one Answer more content about question number one Answer more content about question number one Answer.</div>
+    &nbsp;
+
+
+
+
 
 
 image reference

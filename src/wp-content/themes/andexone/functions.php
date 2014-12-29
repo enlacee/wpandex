@@ -176,19 +176,33 @@ add_filter( 'wp_page_menu_args', 'andexone_page_menu_args' );
 
 function andexone_contact_add_script()
 {
-    if (is_page_template('page-templates/page-contact.php'))
-    {
+    if (is_page_template('page-templates/page-contact.php')) {
         wp_enqueue_script(
             'jquery.validate',
-            get_template_directory_uri() . '/assets/js/plugins/jquery.validate.min.js', array(), false, true);        
+            get_template_directory_uri() . '/assets/js/plugins/jquery.validate.min.js', array(), false, true);
         wp_enqueue_script(
             'page-contact',
-            get_template_directory_uri() . '/assets/js/page-templates/page-contact.js', array(), false, true);        
+            get_template_directory_uri() . '/assets/js/page-templates/page-contact.js', array(), false, true);
 
-    }   
+    }
 }
 add_filter( 'wp_enqueue_scripts', 'andexone_contact_add_script');
 
+/**
+ *  add Script for Questions and Answer
+ *  note all pages | need optimize
+ */
+function andexonde_question_and_request() {
+    if (is_page_template('page-templates/page-question.php')) {
+        wp_enqueue_script(
+            'jquery.validate',
+            get_template_directory_uri() . '/assets/js/plugins/jquery.validate.min.js', array(), false, true);
+        wp_enqueue_script(
+            'andexonde_question_and_request',
+            get_template_directory_uri() . '/assets/js/front-view/question-and-answer.js', array(), time(), true);
+    }
+}
+add_filter( 'wp_enqueue_scripts', 'andexonde_question_and_request');
 
 
 /***
@@ -230,6 +244,41 @@ MESSAGE;
 // creating Ajax call for WordPress
 add_action('wp_ajax_ajaxPageContact', 'ajaxPageContact'); // admin
 add_action('wp_ajax_nopriv_ajaxPageContact', 'ajaxPageContact'); // anonimus
+
+/**
+ * Pge templates/page-question.php
+ * Send mail to administrador web.
+ * 
+ */
+function ajaxPageQuestion()
+{
+    $flag = false;
+    if (count($_REQUEST) > 1) {
+        $admin_email = get_option('admin_email');
+        $other = '';
+        
+        $to = array($admin_email, $other);
+        $subject = $_REQUEST['issue'];
+        $message = <<<MESSAGE
+from : {$_REQUEST['email']}
+email : {$_REQUEST['email']}
+issue : {$_REQUEST['issue']}
+MESSAGE;
+
+        $flag = wp_mail( $to, $subject, $message);
+    }
+
+    if ($flag) {
+        echo "1";
+    } else {
+        echo "0";
+    }
+    die();
+}
+// creating Ajax call for WordPress
+add_action('wp_ajax_ajaxPageQuestion', 'ajaxPageQuestion'); // admin
+add_action('wp_ajax_nopriv_ajaxPageQuestion', 'ajaxPageQuestion'); // anonimus
+
 
 
 /**

@@ -10,21 +10,19 @@
 
 get_header(); ?>
 <style type="text/css">
-    .container {
-        padding: 0;
+    .container-me-page {
+        padding: 0 0 0 15px;
     }
 </style> 
     <div class="wrapper-container">
         <div class="container container-me-page color-bg-white ">
-
-
 
             <?php while ( have_posts() ) : the_post(); ?>
                 <div class="subtitle subtitle-bg-1">
                     <h2>&nbsp;&nbsp;&nbsp;&nbsp;<?php the_title(); ?></h2>
                 </div>
 
-                <div class="">
+                <div class="page-one-colum">
                     <?php the_content(); ?>
 
                 </div>
@@ -33,4 +31,6 @@ get_header(); ?>
 
         </div>
     </div>
+
+
 <?php get_footer(); ?>    
