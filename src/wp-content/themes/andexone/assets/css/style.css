@@ -233,17 +233,19 @@ body {
     background-color: #0072b7;
     color: white;
     text-shadow: 1px 1px 1px #222222;
-    border-left: 3.5px solid #fff;
-    border-right: 3.5px solid #fff;
+    margin-left: 0px;
+    margin-right: 5px;
     border-top: 1px solid #fff;
     text-transform: uppercase;
 }
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
+    margin-left: 0px;
+    margin-right: 5px;
     border-top: 1px solid black;
     border-left: 1px solid black;
-    border-right: 1px solid black; 
+    border-right: 1px solid black;
     color: #0072b7;
     background-color: #fff;
     font-weight: bold;   
@@ -251,6 +253,7 @@ body {
     box-shadow: 2px -2.6px 5px #CCC, 0px -0px 0px #d0dbe1;
     text-shadow: none;
 }
+
 
 .mega-menu.dropdown {
     /*border:1px solid red;
