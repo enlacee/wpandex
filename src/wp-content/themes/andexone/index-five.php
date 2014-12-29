@@ -8,7 +8,7 @@ if (ICL_LANGUAGE_CODE == 'es') {
 } elseif (ICL_LANGUAGE_CODE == 'en') {
     $dat = get_post_by_language($my_new->ID, 'page', ICL_LANGUAGE_CODE);
     $my_new = (is_object($dat)) ? $dat : $my_new;
-} elseif (ICL_LANGUAGE_CODE == 'pt') {
+} elseif (ICL_LANGUAGE_CODE == 'pt-br') {
     $dat = get_post_by_language($my_new->ID, 'page', ICL_LANGUAGE_CODE);
     $my_new = (is_object($dat)) ? $dat : $my_new;
 }
@@ -23,7 +23,7 @@ if (ICL_LANGUAGE_CODE == 'es') {
 } elseif (ICL_LANGUAGE_CODE == 'en') {
     $dat = get_post_by_language($my_02->ID, 'page', ICL_LANGUAGE_CODE);
     $my_02 = (is_object($dat)) ? $dat : $my_02;
-} elseif (ICL_LANGUAGE_CODE == 'pt') {
+} elseif (ICL_LANGUAGE_CODE == 'pt-br') {
     $dat = get_post_by_language($my_02->ID, 'page', ICL_LANGUAGE_CODE);
     $my_02 = (is_object($dat)) ? $dat : $my_02;
 }
