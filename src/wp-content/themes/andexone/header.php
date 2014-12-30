@@ -24,7 +24,7 @@
             <!-- == header == -->
             <div class="header">
                 
-                <div class="bg-topbar">
+                <div class="subtitle-bg-1">
                     <div class="container">
                         <div class="topbar clearfix">
 <?php
