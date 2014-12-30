@@ -3,11 +3,3 @@
  * optimize all site web
  * 
  * */
-
-/**
- * languague
- */
-#lang_sel li {
-	float:none;
-	z-index: 11;
-}

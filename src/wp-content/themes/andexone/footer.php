@@ -17,13 +17,13 @@
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/facebook.png" alt="skype">
                         </a>
                         <a href="#" title="skype">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/twitter.png" alt="skype">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/twitter.png" alt="twitter">
                         </a>
                         <a href="#" title="skype">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/youtube.png" alt="skype">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/youtube.png" alt="youtube">
                         </a>
                         <a href="#" title="skype">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/linkedin.png" alt="skype">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/linkedin.png" alt="linkedin">
                         </a>
                     </div>
                 </div>
@@ -32,18 +32,18 @@
         </div><!-- end-wrapper -->
 
         
-        <div class="div-social">
+        <div class="div-social hidden-xs">
             <a href="#" title="skype">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/facebook.png" alt="skype">
             </a>
             <a href="#" title="skype">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/twitter.png" alt="skype">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/twitter.png" alt="twitter">
             </a>
             <a href="#" title="skype">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/youtube.png" alt="skype">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/youtube.png" alt="youtube">
             </a>
             <a href="#" title="skype">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/linkedin.png" alt="skype">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/linkedin.png" alt="linkedin">
             </a>
         </div><!-- End . social-->       
 
