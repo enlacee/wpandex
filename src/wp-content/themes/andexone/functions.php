@@ -166,8 +166,6 @@ function andexone_page_menu_args( $args ) {
 }
 add_filter( 'wp_page_menu_args', 'andexone_page_menu_args' );
 
-
-
 /**
  * Add Script in footer  for pages-template determinates 
  * 
@@ -199,10 +197,30 @@ function andexonde_question_and_request() {
             get_template_directory_uri() . '/assets/js/plugins/jquery.validate.min.js', array(), false, true);
         wp_enqueue_script(
             'andexonde_question_and_request',
-            get_template_directory_uri() . '/assets/js/front-view/question-and-answer.js', array(), time(), true);
+            get_template_directory_uri() . '/assets/js/front-view/question-and-answer.js', array(), false, true);
     }
 }
 add_filter( 'wp_enqueue_scripts', 'andexonde_question_and_request');
+
+/**
+ * Add Script in home example slides
+ * 
+ * @return void
+ */
+
+function andexone_home_add_script()
+{
+    if (is_home()) {
+        /*
+        wp_enqueue_script(
+            'slider-bootstrap',
+            get_template_directory_uri() . '/assets/js/front-view/home.js', array(), false, true);
+        */
+    }
+}
+add_filter( 'wp_enqueue_scripts', 'andexone_home_add_script');
+
+
 
 
 /***

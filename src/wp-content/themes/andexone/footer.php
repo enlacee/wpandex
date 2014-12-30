@@ -48,13 +48,6 @@
         </div><!-- End . social-->       
 
     <?php wp_footer(); ?>
-    <script type="text/javascript">
-    $(document).ready(function () {
-        $('.carousel').carousel({
-            interval: 130000000
-        });
-    });
-    </script>
     </body>
 </html>
 
