@@ -71,6 +71,7 @@ $list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul
 ?>                                    
                                     <ul>
                                         <?php if (!empty($list)): ?>
+                                        <?php get_template_part( 'header', 'menustatic' ); ?>
                                         <?php echo $list ?>
                                         <?php else: ?>
                                         <li><a href="#">Proyectos config</a></li>                                        

@@ -102,7 +102,7 @@ body {
     margin: 0;
 }
 
-.topbar-middle ul > li {
+.topbar-middle > ul > li {
     display: inline;
     list-style: none;
     top: -2.5px;
@@ -111,7 +111,7 @@ body {
     position: relative;
     border-left: solid 1px #666; 
 }
-.topbar-middle ul > li:last-child {
+.topbar-middle > ul > li:last-child {
     border-right: solid 1px #666; 
 }
 
@@ -121,11 +121,11 @@ body {
     font-size: 12px;    
 }
 
-.topbar-middle ul li.current-menu-item a {
+.topbar-middle ul > li.current-menu-item a {
     color: #0072b7;
     text-decoration: underline;
 }
-.topbar-middle ul li.current-menu-item::before {
+.topbar-middle ul > li.current-menu-item::before {
    content: url(../img/ico_arrow.jpg);
    margin-right: 5px;
     
@@ -183,6 +183,7 @@ body {
 .mega-menu .menu > li > a:focus {
     border-color: #f1f1f1;
     text-decoration: underline;
+    font-size: 14px
 }
 .mega-menu .dropdown-menu {
     background:rgba(255,255,255, 0.8);
@@ -470,6 +471,9 @@ body {
 }
 .subtitle-bg-3 {
     background: transparent url('../img/new-bg-title-3.jpg') no-repeat top right;    
+}
+.subtitle-bg-4 {
+    background: transparent url('../img/new-bg-title-4.jpg') no-repeat top right;    
 }
 
 .btn-see-news {    

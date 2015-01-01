@@ -18,7 +18,7 @@ get_header(); ?>
         <div class="container container-me-page color-bg-white ">
 
             <?php while ( have_posts() ) : the_post(); ?>
-                <div class="subtitle subtitle-bg-1">
+                <div class="subtitle subtitle-bg-1 subtitle-bg-4">
                     <h2>&nbsp;&nbsp;&nbsp;&nbsp;<?php the_title(); ?></h2>
                 </div>
 
@@ -46,13 +46,13 @@ get_header(); ?>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form action="<?php echo esc_url(admin_url('/admin-ajax.php')); ?> " method="POST" name="form" id="form">
+            <form action="<?php echo esc_url(admin_url('/admin-ajax.php')); ?> " method="POST" name="form" id="form" >
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
                 <div class="modal-body">
-                      <p><?php _e('Enter your mail for see all questions', 'andexone') ?></p>
+                      <p><?php _e('For see the answer complete, enter your email and clic in send', 'andexone') ?></p>
                       
                         <div class="form-group">
                           <label for="recipient-name" class="control-label"><strong><?php _e('Email', 'andexone') ?>:</strong></label>
@@ -63,8 +63,8 @@ get_header(); ?>
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><?php _e('Close', 'andexone') ?></button>
-                    <button type="submit" class="btn btn-primary"><?php _e('Send', 'andexone') ?></button>        
+                    <button type="button" class="btn btn-primary color-bg-blue color-text-white btn-sky text-bold" data-dismiss="modal"><?php _e('Cancel', 'andexone') ?></button>
+                    <button type="submit" class="btn btn-primary color-bg-blue color-text-white btn-sky text-bold"><?php _e('Send', 'andexone') ?></button>        
                 </div>
             </form>
         </div>

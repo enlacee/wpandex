@@ -8,20 +8,47 @@
  */
 
 // 01 get fisrt category
-    
-    $slug = 'soluciones';
-    $objCategory = get_category_by_slug( $slug );
+    $default = array('orderby' => 'id', 'order' => 'ASC', 'style'=> 'none',
+     'exclude'=> false, 'number' => false, 'echo' => 0, );
+
+    $dataCategory = get_categories($default); 
+    $objCategory = false;
+
+    if (count($dataCategory) > 0) {
+        //search category : slides
+        if (ICL_LANGUAGE_CODE == 'es') {
+            foreach ($dataCategory as $key => $obj) {
+                if ($obj->slug == 'soluciones') {
+                    $objCategory = $obj; break;
+                }
+            }
+        } elseif(ICL_LANGUAGE_CODE == 'en') {
+            foreach ($dataCategory as $key => $obj) {
+                if ($obj->slug == 'solutions') {
+                    $objCategory = $obj; break;
+                }
+            }
+        } elseif(ICL_LANGUAGE_CODE == 'pt-br') {
+            foreach ($dataCategory as $key => $obj) {
+                if ($obj->slug == 'soluciones-pt') {
+                    $objCategory = $obj; break;
+                }
+            }
+        }
+
+    }  
+
 // 02 get data last post
     $dataPost = array();
     if (is_object($objCategory)) {
-        $dataPost = get_posts(array('category' => $objCategory->cat_ID, 'numberposts'=> 1));
+        $dataPost = get_posts(array('category' => $objCategory->cat_ID, 'post_status'=>'publish', 'numberposts'=> 1));
         $dataPost = (is_array($dataPost) && count($dataPost) > 0) ? $dataPost[0] : false;
     }
 ?>
 <?php if (is_object($dataPost) > 0): ?>
     <div class="col-md-7 col-sm-7 col-xs-6">
-        <h3 class="title-index-category-2 text-uppercase color-text-green"><?php echo $objCategory->name ?></h3>
-        <a href="<?php echo get_permalink($dataPost->ID) ?>" class="text-uppercase color-text-greene"><?php echo limit_string($dataPost->post_title, 40) ?></a>
+        <h3 class="title-index-category-2 text-uppercase color-text-green"><?php _e($objCategory->name, 'andexone') ?></h3>
+        <a href="<?php echo get_permalink($dataPost->ID) ?>" class="text-uppercase color-text-greene"><?php echo limit_string($dataPost->post_title, 30) ?></a>
         <p style="min-height:30px; margin:0"><?php
             $content = $dataPost->post_content;
             $content = wp_filter_nohtml_kses($content);

@@ -60,7 +60,7 @@ Entoncés creamos esta lista de **categorias** al costado equivalentes en ingles
     noticias | news | noticias.pt:
     ejecucion de obras |ejecucion de obras.en | ejecucion de obras.pt : 
     proyectos |projects | projetos:
-    soluciones :
+    soluciones |solutions|solutiones.pt
     
     productos
     
@@ -126,6 +126,14 @@ funcionamiento.
     <div class="read-more"><button class="btn btn-primary">read more</button></div>
     <div class="hide">more content about question number one Answer more content about question number one Answer more content about question number one Answer.</div>
     &nbsp;
+
+formato similar
+
+    <h4><strong>1)</strong> <a class="link-search">Question number one?</a></h4>
+    Answer number one that solution is  very very  usefull for that people  you now  this moment we count with multiples tecnologies main  the evolution of energy recycle but this thecnologie sopport multiple environment
+    <div class="read-more"><a class="see-detail" href="#">read detail</a></div>
+    <div class="hide">more content about question number one Answer more content about question number one Answer more content about question number one Answer.</div>
+    &nbsp;    
 
 
 
