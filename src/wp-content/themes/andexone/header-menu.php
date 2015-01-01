@@ -9,11 +9,11 @@ if (is_home()) {
     $my_menu = false;
 }elseif (is_page('nosotros')) {
     $my_menu = 'nosotros';
-} elseif (in_category('soluciones')) {
+} elseif (in_category('soluciones') || in_category('solutions') || in_category('solucoes')) {
     $my_menu = 'soluciones';
-} elseif (in_category('productos')) {
+} elseif (in_category('productos') || in_category('produce') || in_category('produzir')) {
     $my_menu = 'productos';
-} elseif (in_category('sectores')) {
+} elseif (in_category('sectores') || in_category('sectores-en')|| in_category('setores')) {
     $my_menu = 'sectores';
 } elseif (is_page('asistencia-tecnica')) {
     $my_menu = 'asistencia-tecnica';

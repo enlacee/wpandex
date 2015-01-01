@@ -35,12 +35,18 @@ foreach ( $related as $post ) {
     $href = get_permalink($dataPost->ID);
     $title = $post->post_title;
     
-    if (getFisrtCategory($post->ID) == 'productos') {
+    if (getFisrtCategory($post->ID) == 'productos'
+        || getFisrtCategory($post->ID) == 'produce'
+        || getFisrtCategory($post->ID) == 'produzir')
+    {
         $li_productos[] = <<<LI
             <li><a href="{$href}" title="{$title}">{$title}</a></li>
 LI;
         
-    } elseif(getFisrtCategory($post->ID) == 'soluciones') {
+    } elseif(getFisrtCategory($post->ID) == 'soluciones'
+        || getFisrtCategory($post->ID) == 'solutions'
+        || getFisrtCategory($post->ID) == 'solucoes')
+    {
         
         $li_soluciones[] = <<<LI
             <li><a href="{$href}" title="{$title}">{$title}</a></li>
@@ -63,14 +69,14 @@ var_dump($item_li_soluciones);
 <div class="boder-dotted-black"></div>
 <div class="sector-footer">
 <?php if (!empty($item_li_productos)): ?>
-    <h3><?php _e('Productos') ?></h3>
+    <h3><?php _e('Produce', 'andexone') ?></h3>
     <ul>
         <?php echo $item_li_productos ?>
     </ul>
 <?php endif; ?>
 
 <?php if (!empty($item_li_soluciones)): ?>
-<h3><?php _e('Soluciones') ?></h3>
+<h3><?php _e('Soluciones', 'andexone') ?></h3>
 <ul>
     <?php echo $item_li_soluciones ?>
 </ul>

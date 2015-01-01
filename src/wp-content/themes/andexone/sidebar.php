@@ -12,11 +12,12 @@
 <?php
 // logic selection of sidebar
 $sidebar_select = '';
-if (in_category('productos') || in_category('soluciones')) {
+if (in_category('productos') || in_category('produce') || in_category('produzir')
+	|| in_category('soluciones') || in_category('solutions') || in_category('solucoes')) {
     
     $sidebar_select = 'sidebar-2';
     
-} elseif (in_category('sectores') || in_category('setores')) {
+} elseif (in_category('sectores') || in_category('sectores-en') || in_category('setores')) {
     
     $sidebar_select = 'sidebar-3';
  

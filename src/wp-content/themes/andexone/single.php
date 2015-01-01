@@ -16,11 +16,14 @@ if (in_category('noticias')) {
     
     include(TEMPLATEPATH.'/single-noticias.php');
 
-} elseif (in_category('productos') || in_category('soluciones')) {
+} elseif (in_category('productos') || in_category('produce') || in_category('produzir')
+	|| in_category('soluciones') || in_category('solutions') || in_category('solucoes')
+	|| in_category('proyectos') || in_category('projects') || in_category('projetos')	
+){
     
     include(TEMPLATEPATH.'/single-productos.php');
     
-} elseif (in_category('sectores') || in_category('setores')) {
+} elseif (in_category('sectores') || in_category('sectores-en') || in_category('setores')) {
     
     include(TEMPLATEPATH.'/single-sectores.php');
     

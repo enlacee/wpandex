@@ -81,7 +81,7 @@ function andexone_widgets_init() {
 		'name' => __( 'Footer Sidebar for categories', 'andexone' ),
 		'id' => 'sidebar-4',
 		'description' => __( 'Appears usefull for categories: soluciones, productos, sectores', 'andexone' ),
-		'before_widget' => '<aside id="%1$s" class="widget-footer %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h4 class=" ">',
 		'after_title' => '</h4>',

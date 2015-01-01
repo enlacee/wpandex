@@ -57,6 +57,7 @@ class Other_Pages_By_Category_Widget extends WP_Widget {
                 } else {
                     $constante = ceil($numPost/$numCol);
                     //$args['before_title'] = str_replace('class="', 'class="wg-footer ', $args['before_title']);
+                    echo "<div class='widget-footer'>";
                     echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'].$obj_category->name  ). $args['after_title'];                                   
                     echo "<div class='row'>";
                     for ($i = 0; $i < $numCol; $i++) {
@@ -74,6 +75,7 @@ class Other_Pages_By_Category_Widget extends WP_Widget {
                         echo "</ul>";
                         echo "</div>";
                     }
+                    echo "</div>";
                     echo "</div>";
                 }
 

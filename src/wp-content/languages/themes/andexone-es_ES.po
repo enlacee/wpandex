@@ -1,7 +1,7 @@
 # Translation of Andex One to Spanish (Spain)
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-01-01 02:44-0500\n"
+"PO-Revision-Date: 2015-01-01 15:17-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -93,6 +93,12 @@ msgstr "INNOVADORAS"
 msgid "SOLUTIONS"
 msgstr "SOLUCIONES"
 
+msgid "Solutions"
+msgstr "Soluciones"
+
+msgid "solutions"
+msgstr "soluciones"
+
 #: header-menu.php:93
 msgid "ENGINEERING"
 msgstr "INGENIERÍA"
@@ -112,6 +118,12 @@ msgstr "ASISTENCIA TÉCNICA"
 
 msgid "PRODUCE"
 msgstr "PRODUCTOS"
+
+msgid "Produce"
+msgstr "Productos"
+
+msgid "produce"
+msgstr "productos"
 
 msgid "Projects"
 msgstr "Proyectos"

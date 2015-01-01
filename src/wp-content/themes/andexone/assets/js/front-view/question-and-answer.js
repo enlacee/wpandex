@@ -44,6 +44,8 @@ $(document).ready(function () {
                         contact[0].reset();
                         
                         var url = window.location.href; //document.URL
+                        url = url.replace("#", "");
+
                         var patt = new RegExp(".\?");
                         if (patt.test(url)) {                            
                             var p = url.split('?');

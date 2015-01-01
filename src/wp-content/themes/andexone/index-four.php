@@ -30,7 +30,7 @@
             }
         } elseif(ICL_LANGUAGE_CODE == 'pt-br') {
             foreach ($dataCategory as $key => $obj) {
-                if ($obj->slug == 'soluciones-pt') {
+                if ($obj->slug == 'solucoes') {
                     $objCategory = $obj; break;
                 }
             }

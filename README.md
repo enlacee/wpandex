@@ -60,9 +60,11 @@ Entoncés creamos esta lista de **categorias** al costado equivalentes en ingles
     noticias | news | noticias.pt:
     ejecucion de obras |ejecucion de obras.en | ejecucion de obras.pt : 
     proyectos |projects | projetos:
-    soluciones |solutions|solutiones.pt
+    soluciones |solutions|soluções 'solucoes'
+    sectores|sectores.en|setores
     
-    productos
+    productos|produce|produzir
+
     
     ... :...
 paginas a crear static:  *title : slug*
