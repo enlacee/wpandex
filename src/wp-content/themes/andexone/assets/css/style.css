@@ -552,8 +552,11 @@ body {
     background-color: #DDF5FF;
     -webkit-border-radius: 10px 0 0 10px;
     border-radius: 10px 0 0 10px;
-    min-height: 550px;
-    padding-bottom: 20px;
+    min-height: 0px;
+    
+}
+.widget {
+    padding:0px 15px 0px 15px
 }
 .wrapper-container ul {
     list-style: none;
@@ -597,6 +600,7 @@ body {
     line-height: 29px;
     text-transform: capitalize;
     text-shadow: 1px 1px 1px #222222;
+    margin: 10px 0;
 }
 .widget_huge_it_gallery_widget .widget-title::before {   
    content: url(../img/ico-gallery.jpg);
@@ -683,6 +687,7 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     color: rgba(255, 255, 255, 0.5);
     padding: 25px 20px;
+    margin: 0 0 10px 0;
 }
 
 /**

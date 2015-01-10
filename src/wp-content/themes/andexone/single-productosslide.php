@@ -22,13 +22,15 @@
         if( $attachments->exist() ) {
             while($attachments->get()) {
                 if ($attachments->url() != '' &&   $attachments->type() == 'image') {
-                    $thumbnail = $attachments->src('thumbnail');
+                    $data_thumb_slide = wp_get_attachment_image_src($attachments->id(), 'slides'); // 991x348
+                    $thumb_slide = $data_thumb_slide[0];
+                    // $attachments->url()
                     $item_carousel[] = <<<ITEM
-          <div data-thumb="{$attachments->url()}"  style="overflow: hidden; text-align: center;">
+          <div data-thumb="{$thumb_slide}"  style="overflow: hidden;">
+            <div><img src="{$thumb_slide}" alt="{$attachments->field('title')}" /></div>
             <div class="bg-slide-vertical-title">
                 <div class="slide-vertical-title">{$attachments->field('title')}</div>
             </div>
-            <img src="{$attachments->url()}" alt="{$attachments->field('title')}" />            
           </div>
 ITEM;
                 }
@@ -42,15 +44,17 @@ ITEM;
     <style>
     .slide-vertical-title {       
         font-size: 14px;
+        line-height: 14px;
         color: white;
-       font-weight: bold;
-       text-align: left;
-        padding: 0 0 0 15px;
+        font-weight: bold;
+        text-align: left;
+        padding: 6px;
     }
     .bg-slide-vertical-title {
-        position: absolute;  
+        position: relative;  
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
+        top:-25px;
     }
     /*custom*/
     a.lSPrev, a.lSNext {
@@ -79,7 +83,7 @@ ITEM;
             gallery:true,
             item:1,
             vertical:true,
-            verticalHeight:295,
+            verticalHeight:348, /*348*/
             vThumbWidth:50,
             thumbItem:8,
             thumbMargin:4,
@@ -87,8 +91,17 @@ ITEM;
             prevHtml : '<span class="glyphicon glyphicon-chevron-left"></span>',
             nextHtml : '<span class="glyphicon glyphicon-chevron-right"></span>',
             addClass : ''
-      });        
+        });
+        // console.log('slider',slider);
+        var obj = slider;
+
+        var img = $(obj[0]).find('img');
+        for (var i=0; i<img.length; i++) {            
+            $(img[i]).attr('width', '991px').attr('height', '348px');
+        }
+
       });
+// width="991px"
     </script>
     
 

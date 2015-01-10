@@ -13,16 +13,16 @@
                     </div>
                     <div class="col-md-4"><?php _e('Andex © .All rights reserved', 'andexone') ?></div>
                     <div class="col-md-3 text-right">
-                        <a href="#" title="skype">
+                        <a href="javascript::void()">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/facebook.png" alt="skype">
                         </a>
-                        <a href="#" title="skype">
+                        <a href="javascript::void()">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/twitter.png" alt="twitter">
                         </a>
-                        <a href="#" title="skype">
+                        <a href="javascript::void()">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/youtube.png" alt="youtube">
                         </a>
-                        <a href="#" title="skype">
+                        <a href="javascript::void()">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/linkedin.png" alt="linkedin">
                         </a>
                     </div>
@@ -33,16 +33,16 @@
 
         
         <div class="div-social hidden-xs">
-            <a href="#" title="skype">
+            <a href="javascript::void()">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/facebook.png" alt="skype">
             </a>
-            <a href="#" title="skype">
+            <a href="javascript::void()">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/twitter.png" alt="twitter">
             </a>
-            <a href="#" title="skype">
+            <a href="javascript::void()">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/youtube.png" alt="youtube">
             </a>
-            <a href="#" title="skype">
+            <a href="javascript::void()">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/linkedin.png" alt="linkedin">
             </a>
         </div><!-- End . social-->       

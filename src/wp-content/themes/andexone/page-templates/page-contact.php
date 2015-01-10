@@ -24,40 +24,40 @@ get_header(); ?>
                     <ul>
                         <li>
                             <div class="form-group">
-                                <label for="name" class="col-sm-3 control-label">
+                                <label for="name" class="col-md-4 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <?php _e('Name', 'andexone') ?></label>
-                                <div class="col-sm-9">
+                                <div class="col-md-8">
                                   <input type="text" class="form-control required" name="name" />
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="company" class="col-sm-3 control-label">
+                                <label for="company" class="col-md-4 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <?php _e('Company', 'andexone') ?></label>
-                                <div class="col-sm-9">
+                                <div class="col-md-8">
                                   <input type="text" class="form-control" name="company" />
                                 </div>
                             </div>                            
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="email" class="col-sm-3 control-label">
+                                <label for="email" class="col-md-4 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <?php _e('Email', 'andexone') ?></label>
-                                <div class="col-sm-9">
+                                <div class="col-md-8">
                                   <input type="email" class="form-control required email" name="email" />
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="issue" class="col-sm-3 control-label">
+                                <label for="issue" class="col-md-4 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <?php _e('Issue', 'andexone') ?></label>
-                                <div class="col-sm-9">
+                                <div class="col-md-8">
                                     <select class="form-control required" name="issue">
                                         <option value="" selected="selected"></option>
                                         <option value="consultation"><?php _e('Consultation', 'andexone') ?></option>
@@ -69,10 +69,10 @@ get_header(); ?>
                         </li>
                         <li>
                             <div class="form-group">
-                                <label for="message" class="col-sm-3 control-label">
+                                <label for="message" class="col-md-4 control-label">
                                     <span class="color-text-blue">•</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <?php _e('Mensaje', 'andexone') ?></label>
-                                <div class="col-sm-9">
+                                <div class="col-md-8">
                                 <textarea name="message" class="form-control required" 
                                 rows="5" aria-required="true"></textarea>                                  
                                 </div>

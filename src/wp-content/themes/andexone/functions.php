@@ -25,6 +25,9 @@ function andexone_setup() {
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 624, 9999 ); // Unlimited height, soft crop
     add_image_size( 'thumbnails-doc', 75 );
+
+    // add new dimension all images : slides
+    add_image_size( 'slides', 991, 348); 
 }
 add_action( 'after_setup_theme', 'andexone_setup' );
 

@@ -31,6 +31,6 @@ if (in_category('productos') || in_category('produce') || in_category('produzir'
 
 	<?php if ( is_active_sidebar( $sidebar_select ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
-                    <?php dynamic_sidebar( $sidebar_select ); ?>
+                <?php dynamic_sidebar( $sidebar_select ); ?>
 		</div><!-- #secondary -->
-	<?php endif; ?>
+    <?php endif; ?>
