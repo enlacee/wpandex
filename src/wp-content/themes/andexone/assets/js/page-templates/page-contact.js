@@ -7,8 +7,8 @@ $(document).ready(function () {
     var message = $("#contact-message");
     var message_bad = $("#contact-message-bad");    
     $(contact).validate({
-
-      submitHandler: function(form) {
+        lang: 'en',
+        submitHandler: function(form) {
         $.ajax({
             type : 'GET',
             url: contact.attr('action'),
@@ -31,6 +31,9 @@ $(document).ready(function () {
         });
 
       }
-    });    
+    });
+
+
+    
 });
 

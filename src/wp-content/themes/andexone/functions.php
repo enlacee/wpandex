@@ -185,10 +185,21 @@ function andexone_contact_add_script()
         wp_enqueue_script(
             'jquery.validate',
             get_template_directory_uri() . '/assets/js/plugins/jquery.validate.min.js', array(), false, true);
+        // languague
+        if (defined('ICL_LANGUAGE_CODE')) {
+            if (ICL_LANGUAGE_CODE == 'es') {
+                wp_enqueue_script(
+                    'jquery.validate.es',
+                    get_template_directory_uri() . '/assets/js/plugins/message.es.js', array(), false, true);
+            } elseif (ICL_LANGUAGE_CODE == 'pt-br') {
+                wp_enqueue_script(
+                    'jquery.validate.pt',
+                    get_template_directory_uri() . '/assets/js/plugins/message.pt.js', array(), false, true);
+            }            
+        }
         wp_enqueue_script(
             'page-contact',
             get_template_directory_uri() . '/assets/js/page-templates/page-contact.js', array(), false, true);
-
     }
 }
 add_filter( 'wp_enqueue_scripts', 'andexone_contact_add_script');
@@ -202,6 +213,18 @@ function andexonde_question_and_request() {
         wp_enqueue_script(
             'jquery.validate',
             get_template_directory_uri() . '/assets/js/plugins/jquery.validate.min.js', array(), false, true);
+        // languague
+        if (defined('ICL_LANGUAGE_CODE')) {
+            if (ICL_LANGUAGE_CODE == 'es') {
+                wp_enqueue_script(
+                    'jquery.validate.es',
+                    get_template_directory_uri() . '/assets/js/plugins/message.es.js', array(), false, true);
+            } elseif (ICL_LANGUAGE_CODE == 'pt-br') {
+                wp_enqueue_script(
+                    'jquery.validate.pt',
+                    get_template_directory_uri() . '/assets/js/plugins/message.pt.js', array(), false, true);
+            }            
+        }        
         wp_enqueue_script(
             'andexonde_question_and_request',
             get_template_directory_uri() . '/assets/js/front-view/question-and-answer.js', array(), false, true);
