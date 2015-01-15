@@ -501,3 +501,4 @@ function get_post_by_language($id_post, $post_type = 'post', $lang_code )
 
     return $return;
 }
+

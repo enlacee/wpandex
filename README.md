@@ -139,7 +139,29 @@ formato similar
 
 
 
+### Configuracion de Galeria de images andex : exclusivos para SECTORES Y PRODUCTOS
 
+1. Crear galeria:
+
+En el menu 'DASHBOARD' exsite un menu llamando : **Huge IT Gallery** click 
+y agregar todas las imagenes que quieres que se muestren.
+
+- Selecciona que tu galeria en : **Select The Gallery View**
+tu galeria debe ser del tipo *Andex Slider 1*
+
+Esta es la imagen de referencia *creacion de galeria*
+![imagen configura](http://i61.tinypic.com/2ls75hx.png)
+
+
+2. Insertar Galderia en el post:
+
+Al editar un post  abajo del titulo del post existe un boton llamado 
+**Add Gallery** con esto agregaras las galerias de fotos disponibles
+
+puedes agregar una galeria: con este formato:
+[huge_it_gallery id="NUMEROX"]
+
+![imagen configura](http://i60.tinypic.com/116jsw7.png)
 
 
 image reference
