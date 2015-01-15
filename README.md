@@ -148,7 +148,7 @@ Selecciona que tu galeria en : **Select The Gallery View**
 tu galeria debe ser del tipo *Andex Slider 1*
 Esta es la imagen de referencia *creacion de galeria*.
 
-[configuracion galeria](http://i61.tinypic.com/2ls75hx.png)
+    [configuracion galeria](http://i61.tinypic.com/2ls75hx.png)
 
 2. **Insertar Galderia en el post:**
 Al editar un post  abajo del titulo del post existe un boton llamado 
