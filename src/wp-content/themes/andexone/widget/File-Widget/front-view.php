@@ -24,7 +24,7 @@
 
                 $item_carousel[] = <<<ITEM
             <li>
-           <a class="group1 image-link" href="{$attachments->url()}" title="{$attachments->field('title')}">
+           <a class="" href="{$attachments->url()}" title="{$attachments->field('title')}">
             {$attachments->field('title')}  ({$attachments->filesize()})
            </a> {$span_ico}
 

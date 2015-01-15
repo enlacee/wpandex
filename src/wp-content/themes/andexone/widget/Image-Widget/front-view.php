@@ -97,7 +97,7 @@
                 $thumbnail = $attachments->src('thumbnail');
                 $item_carousel[] = <<<ITEM
         <div class="item">
-           <a class="group1 image-link" href="{$attachments->url()}" title="{$attachments->field('title')}">               
+           <a class="" href="{$attachments->url()}" title="{$attachments->field('title')}">               
               <img style="width:75px" id="wd-cl-img{$attachments->id()}" alt="{$attachments->field('title')}" src="{$thumbnail}"/>
            </a>
        </div>
