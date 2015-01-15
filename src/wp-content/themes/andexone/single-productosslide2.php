@@ -17,7 +17,7 @@
         
     }
 
-    if ($id_gallery != false && $id_gallery == 7) {
+    if ($id_gallery != false) {
         $id = $id_gallery;
         $query=$wpdb->prepare("SELECT * FROM ".$wpdb->prefix."huge_itgallery_images where gallery_id = '%d' order by ordering ASC",$id);
         $images=$wpdb->get_results($query);
@@ -26,7 +26,7 @@
         $gallery=$wpdb->get_results($query); 
 
         //var_dump($gallery);
-        $flag_gallery = !empty($gallery[0]->huge_it_sl_effects) ? $gallery[0]->huge_it_sl_effects : false;
+        $flag_gallery = ($gallery[0]->huge_it_sl_effects == 7) ? $gallery[0]->huge_it_sl_effects : false;
                  
         foreach ($images as $key => $row) {
             $imgurl = explode(";",$row->image_url);
@@ -53,7 +53,7 @@ ITEM;
     }
    
 ?>
-<?php if ($id_gallery && $flag_gallery != false && $flag_gallery == 7): ?>
+<?php if ($id_gallery && $flag_gallery != false): ?>
     <link rel="stylesheet"  href="<?php echo get_template_directory_uri() ?>/assets/plugins/lightSlider/css/lightSlider.css"/>
     <style>
     .slide-vertical-title {       
