@@ -37,13 +37,16 @@
 
             if ($imagerowstype = 'image') {
                 if($row->image_url != ';') { // 991x348
-                $item_carousel[] = <<<ITEM
-                  <div data-thumb="{$imgurl[0]}"  style="overflow: hidden;">
-                    <div><img src="{$imgurl[0]}" alt="{$row->name}" /></div>
-                    <div class="bg-slide-vertical-title">
-                        <div class="slide-vertical-title">{$row->name}</div>
-                    </div>
-                  </div>
+                    $div_title = !empty($row->name) ? 
+                    '<div class="slide-vertical-title">' . $row->name . '</div>' : '';
+
+                    $item_carousel[] = <<<ITEM
+                      <div data-thumb="{$imgurl[0]}"  style="overflow: hidden;">
+                        <div><img src="{$imgurl[0]}" alt="{$row->name}" /></div>
+                        <div class="bg-slide-vertical-title">
+                            {$div_title}
+                        </div>
+                      </div>
 ITEM;
                 }
                 
