@@ -32,7 +32,7 @@ $related = cptr_populate($post->ID);
 $li_productos = array();
 $li_soluciones = array();
 foreach ( $related as $post ) {
-    $href = get_permalink($dataPost->ID);
+    $href = get_permalink($post->ID);
     $title = $post->post_title;
     
     if (getFisrtCategory($post->ID) == 'productos'

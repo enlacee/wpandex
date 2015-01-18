@@ -3,7 +3,7 @@
  * selector menu static
  */
 
-$class = '';
+$class_select = '';
 if (in_category('proyectos') 
     || in_category('projects')
     || in_category('projetos'))
