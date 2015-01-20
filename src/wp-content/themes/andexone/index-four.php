@@ -51,6 +51,7 @@
         <a href="<?php echo get_permalink($dataPost->ID) ?>" class="text-uppercase color-text-greene"><?php echo limit_string($dataPost->post_title, 30) ?></a>
         <p style="min-height:30px; margin:0"><?php
             $content = $dataPost->post_content;
+            $content = strip_shortcodes($content);
             $content = wp_filter_nohtml_kses($content);
             echo limit_string($content, 80); ?></p>
         <div class="btn-see-project">            

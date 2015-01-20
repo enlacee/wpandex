@@ -70,7 +70,7 @@ get_header(); ?>
 
 
                 <div class="col-md-9 col-sm-9">
-                    <div class="title-news-date"><?php echo get_the_date( 'l d F Y' ); ?></div>     
+                    <div class="title-news-date"><?php echo get_the_date( 'l d F Y' ); ?></div>
                     <div>
                         <a class="link-search text-capitalize" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                         <p class="text-capitalize" ><?php
