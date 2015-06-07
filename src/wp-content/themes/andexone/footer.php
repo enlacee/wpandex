@@ -8,23 +8,23 @@
                         <p><?php _e('Contact us at', 'andexone') ?>:<br />
                             <span class="text-unbold">(511)</span> 4367442<br />
                         Av. Javier Prado Este 3569, San Borja, Lima 41 - Perú
-                        <span class="color-text-blue-dark">geosoluciones@andex.com.pe</span>
+                        <span class="color-text-blue-dark"><a href="mailto:geosoluciones@andex.com.pe">geosoluciones@andex.com.pe</a></span>
                         </p>
                     </div>
                     <div class="col-md-4"><?php _e('Andex © .All rights reserved', 'andexone') ?></div>
                     <div class="col-md-3 text-right">
-                        <a href="javascript::void()">
+                        <a href="https://www.facebook.com/pages/ANDEX-Ciudades-Verdes/547825721923640?ref=hl" target="other">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/facebook.png" alt="skype">
                         </a>
-                        <a href="javascript::void()">
+                        <!-- <a href="javascript::void()">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/twitter.png" alt="twitter">
-                        </a>
-                        <a href="javascript::void()">
+                        </a> -->
+                        <a href="https://www.youtube.com/user/geosoluciones1/feed?activity_view=3" target="other">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/youtube.png" alt="youtube">
                         </a>
-                        <a href="javascript::void()">
+                        <!-- <a href="javascript::void()">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/linkedin.png" alt="linkedin">
-                        </a>
+                        </a> --><p><img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-foot.png" alt="Andex">
                     </div>
                 </div>
             </footer>
@@ -32,20 +32,20 @@
         </div><!-- end-wrapper -->
 
         
-        <div class="div-social hidden-xs">
-            <a href="javascript::void()">
+        <!-- <div class="div-social hidden-xs">
+             <a href="https://www.facebook.com/pages/ANDEX-Ciudades-Verdes/547825721923640?ref=hl" target="other">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/facebook.png" alt="skype">
             </a>
-            <a href="javascript::void()">
+           <a href="javascript::void()">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/twitter.png" alt="twitter">
-            </a>
-            <a href="javascript::void()">
+            </a> 
+            <a href="https://www.youtube.com/user/geosoluciones1/feed?activity_view=3" target="other">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/youtube.png" alt="youtube">
-            </a>
-            <a href="javascript::void()">
+            </a>-->
+            <!-- <a href="javascript::void()">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/linkedin.png" alt="linkedin">
-            </a>
-        </div><!-- End . social-->       
+            </a> 
+        </div> End . social-->       
 
     <?php wp_footer(); ?>
     </body>

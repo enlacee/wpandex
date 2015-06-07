@@ -46,10 +46,10 @@
     }
 ?>
 <?php if (is_object($dataPost)): ?>
-        <h4 class="text-bold"><?php echo __($objCategory->name, 'andexone') ?></h4>
+        <h4 class="text-bold"><img src="/web/wp-content/themes/andexone/assets/img/t.gif" width="1" height="5" border="1"></h4>
         <div class="row news-f1">
             <div class="col-md-6 col-sm-6">
-                <?php if (has_post_thumbnail($dataPost->ID)): ?>
+                <img src="/web/wp-content/themes/andexone/assets/img/tit_noti.jpg"><?php if (has_post_thumbnail($dataPost->ID)): ?>
                 <a href="<?php echo get_permalink($dataPost->ID) ?>" title="<?php echo limit_words($dataPost->post_title) ?>">
                     <?php echo get_the_post_thumbnail($dataPost->ID, array(164, 132)); ?>
                 </a>

@@ -47,9 +47,9 @@
 ?>
 <?php if (is_object($dataPost) > 0): ?>
     <div class="col-md-7 col-sm-7 col-xs-6">
-        <h3 class="title-index-category-2 text-uppercase color-text-green"><?php _e($objCategory->name, 'andexone') ?></h3>
-        <a href="<?php echo get_permalink($dataPost->ID) ?>" class="text-uppercase color-text-greene"><?php echo limit_string($dataPost->post_title, 30) ?></a>
-        <p style="min-height:30px; margin:0"><?php
+        <h3 class="title-index-category-2 text-uppercase color-text-green" style="font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;"><?php _e($objCategory->name, 'andexone') ?></h3>
+        <a href="<?php echo get_permalink($dataPost->ID) ?>" class="text-uppercase color-text-greene" style="font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;"><?php echo limit_string($dataPost->post_title, 30) ?></a>
+        <p style="min-height:30px; margin:0; font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;"><?php
             $content = $dataPost->post_content;
             $content = strip_shortcodes($content);
             $content = wp_filter_nohtml_kses($content);

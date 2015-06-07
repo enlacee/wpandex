@@ -31,7 +31,13 @@ function andexone_setup() {
 }
 add_action( 'after_setup_theme', 'andexone_setup' );
 
-
+/**
+ * ADD format markdown
+ */
+add_action('init', 'my_custom_init');
+  function my_custom_init() {
+    add_post_type_support( 'custom-post-type', 'wpcom-markdown' );
+  }
 
 /**
  * This theme uses wp_nav_menu() in 2 locations.
@@ -308,9 +314,12 @@ function ajaxPageQuestion()
         $to = array($admin_email, $other);
         $subject = $_REQUEST['issue'];
         $message = <<<MESSAGE
-from : {$_REQUEST['email']}
-email : {$_REQUEST['email']}
-issue : {$_REQUEST['issue']}
+Pregunta : {$_REQUEST['issue']}
+Nombre : {$_REQUEST['nombre']}
+Teléfono : {$_REQUEST['telefono']}
+Email : {$_REQUEST['email']}
+Empresa : {$_REQUEST['empresa']}
+Página Web : {$_REQUEST['web']}
 MESSAGE;
 
         $flag = wp_mail( $to, $subject, $message);

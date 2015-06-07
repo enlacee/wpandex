@@ -39,7 +39,7 @@ get_header(); ?>
         <div class="container container-me-page color-bg-white ">
 
             <?php while ( have_posts() ) : the_post(); ?>
-                <div class="subtitle subtitle-bg-2">
+                <div class="subtitle subtitle-bg-5">
                     <h2>&nbsp;&nbsp;&nbsp;&nbsp;<?php the_title(); ?></h2>
                 </div>
 
@@ -66,11 +66,11 @@ get_header(); ?>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content subtitle-bg-2">
+        <div class="modal-content subtitle-bg-5">
             <form action="<?php echo esc_url(admin_url('/admin-ajax.php')); ?> " method="POST" name="form" id="form" >
                 <div class="modal-header ">
                     <div class="subtitle ">
-                        <h2 style="color:blue; font-weight:100"><?php the_title(); ?></h2>
+                        <h2 font-weight:100"><?php the_title(); ?></h2>
                     </div>
 
                     <h4 class="modal-title hide" id="myModalLabel">Modal title</h4>
@@ -80,10 +80,32 @@ get_header(); ?>
                     <br/><br/>
                     <div class="form-group">
                         <div class="row">
+                            
+                            <label for="Nombre" class="col-sm-4 control-label"><span class="color-text-green-dark">▪</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php _e('Nombre y Apellido', 'andexone') ?></label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control required"  name="nombre">
+                            </div>
+
+                            <label for="telefono" class="col-sm-4 control-label"><span class="color-text-green-dark">▪</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php _e('Teléfono', 'andexone') ?></label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control"  name="telefono">
+                            </div>
+
                             <label for="email" class="col-sm-4 control-label"><span class="color-text-green-dark">▪</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php _e('Email', 'andexone') ?></label>
                             <div class="col-sm-6">
                               <input type="text" class="form-control required email"  name="email">
                             </div>
+                            
+                            <label for="empresa" class="col-sm-4 control-label"><span class="color-text-green-dark">▪</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php _e('Empresa', 'andexone') ?></label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control"  name="empresa">
+                            </div>
+
+                            <label for="web" class="col-sm-4 control-label"><span class="color-text-green-dark">▪</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php _e('Página Web', 'andexone') ?></label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control"  name="web">
+                            </div>                  
+                    
                             <div class="col-sm-2"></div>
                         </div>
                     </div>

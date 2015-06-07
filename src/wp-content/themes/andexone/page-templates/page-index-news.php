@@ -36,8 +36,8 @@ get_header(); ?>
 
         $mypage = (get_query_var('paged')) ? get_query_var('paged') : 0;
         /***/
-        $limit = 3;
-        $count = count(get_posts(array('category' => $category_id, 'post_status'=>'publish')));
+        $limit = 4;
+        $count = count(get_posts(array('category' => $category_id, 'post_status'=>'publish','posts_per_page'=> -1)));
 
         if ($count > 0) {
             $total_pages = ceil($count/$limit);
@@ -49,7 +49,7 @@ get_header(); ?>
 
         $start = $limit * $mypage - $limit;
 
-        $dataPost = get_posts(array('category' => $category_id,'offset' => $start,'numberposts'=> $limit, 'post_status'=>'publish'));
+        $dataPost = get_posts(array('category' => $category_id,'offset' => $start,'posts_per_page'=> $limit, 'post_status'=>'publish'));
 
     }
 ?>
@@ -105,7 +105,7 @@ get_header(); ?>
             <?php elseif ($mypage == 1): ?>
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/ico-next.jpg">
                 <a href="<?php echo get_permalink() . "/page/2" ?>"><?php _e('Siguiente') ?></a>
-            <?php elseif ($mypage < $limit): $mypage_text = $mypaged + 1; ?>
+            <?php else : $mypaged = $mypage + 1; ?>
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/ico-next.jpg">
                 <a href="<?php echo get_permalink() . "/page/$mypaged" ?>"><?php _e('Siguiente') ?></a>
             <?php endif; ?>

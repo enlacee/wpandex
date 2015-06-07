@@ -17,7 +17,10 @@ get_header(); ?>
                 <h2><?php _e('Contact us', 'andexone') ?></h2>
             </div>
 			<div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3901.3940538432676!2d-76.98831041009787!3d-12.085153445302188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1421157566087" width="970" height="240" frameborder="0" style="border:0"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3901.394235286266!2d-76.986773!3d-12.085141!3m2!1i1024!2i768!4f13.1!2m1!1sandex!5e0!3m2!1ses!2spe!4v1424715101397" width="970" height="240" frameborder="0" style="border:0"></iframe>
+			
+			
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3901.3940538432676!2d-76.98831041009787!3d-12.085153445302188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1421157566087" width="970" height="240" frameborder="0" style="border:0"></iframe> -->
 			</div>
 
             <div class="row margin-bottom-60">

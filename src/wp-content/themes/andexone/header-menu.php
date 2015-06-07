@@ -116,11 +116,11 @@ if (ICL_LANGUAGE_CODE == 'es') {
                                 <li>
                                     <div class="row">
                                         <div class="col-sm-4 col-md-6">
-                                            <h4 class="title-mega-menu">
+                                            <h4 class="title-mega-menu">                                            
                                                 <?php _e('DISCOVER', 'andexone') ?> <br /> 
-                                                <span class="title-mega-menu-tiny-gray"><?php _e('OUR', 'andexone') ?></span>
-                                                <span class="color-text-blue"><?php _e('INNOVATIVE', 'andexone') ?></span><br /> 
-                                                <span class="color-text-black"><?php _e('SOLUTIONS', 'andexone') ?></span><br />
+                                                <span class="title-mega-menu-tiny-gray"><?php _e('NUESTROS', 'andexone') ?></span>
+                                                <span class="color-text-blue"><?php _e('INNOVADORES', 'andexone') ?></span><br /> 
+                                                <span class="color-text-black"><?php _e('PRODUCE', 'andexone') ?></span><br />
                                                 <span class="title-mega-menu-tiny-gray"><?php _e('IN', 'andexone') ?></span>
                                                 <span><?php _e('ENGINEERING', 'andexone') ?></span> 
                                                 <span  class="title-mega-menu-tiny-gray"><?php _e('OF', 'andexone') ?></span><br />
@@ -153,13 +153,11 @@ if (ICL_LANGUAGE_CODE == 'es') {
                                     <div class="col-sm-4 col-md-6">
                                         <h4 class="title-mega-menu">
                                             <?php _e('DISCOVER', 'andexone') ?> <br /> 
-                                            <span class="title-mega-menu-tiny-gray"><?php _e('OUR', 'andexone') ?></span>
-                                            <span class="color-text-blue"><?php _e('INNOVATIVE', 'andexone') ?></span><br /> 
-                                            <span class="color-text-black"><?php _e('SOLUTIONS', 'andexone') ?></span><br />
+                                            <span class="title-mega-menu-tiny-gray"><?php _e('LOS', 'andexone') ?></span>
+                                            <span class="color-text-blue"><?php _e('SECTORS', 'andexone') ?></span><br /> 
                                             <span class="title-mega-menu-tiny-gray"><?php _e('IN', 'andexone') ?></span>
-                                            <span><?php _e('ENGINEERING', 'andexone') ?></span> 
-                                            <span  class="title-mega-menu-tiny-gray"><?php _e('OF', 'andexone') ?></span><br />
-                                            <span class="color-text-blue"><?php _e('GEOSYNTHETICS', 'andexone') ?></span>
+                                            <span><?php _e('LOS QUE', 'andexone') ?></span> 
+                                            <span  class="color-text-blue"><?php _e('PARTICIPATE', 'andexone') ?></span><br />
                                         </h4>
                                         <p class="topbar-middle-devider"></p>
                                     </div>

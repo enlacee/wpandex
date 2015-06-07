@@ -12,15 +12,21 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
+
+<link rel="icon" href="http://www.andex.com.pe/web/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.andex.com.pe/web/favicon.ico" type="image/x-icon" />
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php wp_title( '|', true, 'right' ); ?></title>
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <?php wp_head() ?>
+		
+		<?php include_once("analyticstracking.php") ?>
+		
     </head>
     <body>
-        <div class="wrapper">
+	        <div class="wrapper">
             <!-- == header == -->
             <div class="header">
                 
@@ -34,10 +40,12 @@ $primaryMenu = wp_nav_menu($menuParameters);
 $list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul>$#' ), '', $primaryMenu );
 ?>
                             <ul class="loginbar pull-right">
-                                <?php echo $list ?>                                
-                                <li>
+                                <li><a href="/web/"><img src="/web/wp-content/themes/andexone/assets/img/ico_home.png" border="0"></a></li>
+								  <?php echo $list ?>                                
+                                <!--<li>
                                     <?php do_action('icl_language_selector'); ?>
-                                </li>
+                                </li> -->
+                                
                             </ul>
                             <!-- <ul class="loginbar pull-right">
                                 <li><a href="index.html">inicio</a></li>                                
@@ -55,7 +63,7 @@ $list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul
                                 <a href="<?php echo esc_url( home_url( '/' ) ); ?> "
                                     title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> " rel="home">
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.jpg" alt="Andex">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-foot.jpg" alt="Andex">                                    
+                                    <!-- <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-foot.jpg" alt="Andex">    -->                                 
                                 </a>
                             </div>
                         </div>
@@ -76,7 +84,8 @@ $list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul
                                         <?php else: ?>
                                         <li><a href="#">Proyectos config</a></li>                                        
                                         <li><a href="#">Socios estratégicos config</a></li>                                        
-                                        <li><a href="#">Noticias config</a></li>                                        
+                                        <li><a href="#">Noticias config</a></li> 
+										
                                         <?php endif; ?>
                                     </ul>
                                 </div>
@@ -85,8 +94,8 @@ $list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul
                                 <!--<img src="<?php echo get_template_directory_uri() ?>/assets/img/contactenos.jpg" alt="contactenos" />-->
                                 <strong>
                                 <span class="glyphicon glyphicon-earphone color-text-blue ico-contact" aria-hidden="true"></span>
-                                <span class="color-text-blue"><?php _e('Contact us at', 'andexone') ?></span>
-                                </strong> (511) <strong>436-7442</strong>
+                                <!-- <span class="color-text-blue"><?php _e('Contact us at', 'andexone') ?></span> -->
+                                </strong><font size="3"> (511) <strong>436-7442</strong></font>
                             </div>
                         </div>
                     </div>

@@ -18,7 +18,7 @@ get_header(); ?>
         <div class="page container color-bg-white ">
 
             <?php while ( have_posts() ) : the_post(); ?>
-                <?php get_template_part( 'content', 'productos' ); ?>
+                <?php get_template_part( 'content', 'productos' ); ?></font>
                 <?php //comments_template( '', true ); ?>
             <?php endwhile; ?>
             

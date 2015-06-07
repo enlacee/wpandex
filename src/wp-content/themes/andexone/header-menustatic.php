@@ -17,12 +17,11 @@ if (in_category('proyectos')
             <li>
                 <div class="row">
                     <div class="col-sm-4 col-md-5">
-                        <h4 class="title-mega-menu">
+                        <h4 class="title-mega-menu text-uppercase">
                             <?php _e('DISCOVER', 'andexone') ?> <br /> 
-                            <span class="title-mega-menu-tiny-gray"><?php _e('OUR', 'andexone') ?></span>
-                            <span class="color-text-blue"><?php _e('INNOVATIVE', 'andexone') ?></span><br /> 
-                            <span class="color-text-black"><?php _e('SOLUTIONS', 'andexone') ?></span><br />
-                            <span class="title-mega-menu-tiny-gray"><?php _e('IN', 'andexone') ?></span>
+                            <span class="title-mega-menu-tiny-gray"><?php _e('SOME', 'andexone') ?></span>
+                            <span class="color-text-blue"><?php _e('Projects', 'andexone') ?></span><br /> 
+                            <span class="color-text-black"><?php _e('WITH', 'andexone') ?></span><br />
                             <span><?php _e('ENGINEERING', 'andexone') ?></span> 
                             <span  class="title-mega-menu-tiny-gray"><?php _e('OF', 'andexone') ?></span><br />
                             <span class="color-text-blue"><?php _e('GEOSYNTHETICS', 'andexone') ?></span>

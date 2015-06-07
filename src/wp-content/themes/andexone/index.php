@@ -27,12 +27,12 @@ get_header(); ?>
                         </div>
                         <div class="col-md-4 slide-main-lef">
                             <div class="clearfix margin-bottom-5">
-                                <?php get_template_part( 'index', 'three' ); ?>
+                                <?php get_template_part( 'index', 'four' ); ?>
                             </div>
                             <div class="clearfix"></div>
 
                             <div>
-                                <?php get_template_part( 'index', 'four' ); ?>
+                                <?php get_template_part( 'index', 'three' ); ?>
                             </div>
                             <div class="clearfix"></div>
 
