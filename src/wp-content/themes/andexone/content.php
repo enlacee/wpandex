@@ -23,10 +23,10 @@
                     <img src="<?php echo get_template_directory_uri() ?>/assets/img/ico-news.jpg" />
                 </div>
                 <div class="col-md-11">
-                    <div class="title-news-date"><?php the_date('l d F Y') ?></div>     
+                    <div class="title-news-date"><?php the_date('l d F Y') ?></div>
                     <div><h1 class="text-uppercase"><?php the_title(); ?></h1>
-                    </div>     
                 </div>                
+            </div>            
             </div>            
             <div class="boder-dotted-blue-top"></div>
 
@@ -35,8 +35,8 @@
                 <div class="col-md-8">
                     <?php the_content(); ?>
                 </div>
-
-
+                
+                
                 <!-- NAVBAR -->
                 <div class="col-md-4 page-sidebar">
                     <?php get_sidebar(); ?>

@@ -27,7 +27,8 @@ function andexone_setup() {
     add_image_size( 'thumbnails-doc', 75 );
 
     // add new dimension all images : slides
-    add_image_size( 'slides', 991, 348); 
+    add_image_size( 'slides', 991, 348);
+    add_theme_support( 'html5', array( 'search-form' ) );
 }
 add_action( 'after_setup_theme', 'andexone_setup' );
 
@@ -316,10 +317,10 @@ function ajaxPageQuestion()
         $message = <<<MESSAGE
 Pregunta : {$_REQUEST['issue']}
 Nombre : {$_REQUEST['nombre']}
-Teléfono : {$_REQUEST['telefono']}
+Telï¿½fono : {$_REQUEST['telefono']}
 Email : {$_REQUEST['email']}
 Empresa : {$_REQUEST['empresa']}
-Página Web : {$_REQUEST['web']}
+Pï¿½gina Web : {$_REQUEST['web']}
 MESSAGE;
 
         $flag = wp_mail( $to, $subject, $message);

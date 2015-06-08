@@ -39,14 +39,22 @@ $menuParameters = array( 'container' => false, 'container_class' => '',
 $primaryMenu = wp_nav_menu($menuParameters);
 $list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul>$#' ), '', $primaryMenu );
 ?>
+                            <form method="get" class="" action="<?php echo home_url('/'); ?>">
                             <ul class="loginbar pull-right">
+                                <li>
+                                    <span>
+                                        <input type="search" class="" placeholder="<?php echo _e('Search ...', 'andexone') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" />
+                                    </span>
+                                </li>
+                                 
                                 <li><a href="/web/"><img src="/web/wp-content/themes/andexone/assets/img/ico_home.png" border="0"></a></li>
-								  <?php echo $list ?>                                
-                                <!--<li>
+                                    <?php echo $list ?>                                
+                                <li>
                                     <?php do_action('icl_language_selector'); ?>
-                                </li> -->
+                                </li>
                                 
                             </ul>
+                                </form>
                             <!-- <ul class="loginbar pull-right">
                                 <li><a href="index.html">inicio</a></li>                                
                                 <li><a href="contact.html">contáctenos</a></li>                                

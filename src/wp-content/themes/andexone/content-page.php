@@ -7,6 +7,38 @@
  * @since AndexOne 1.0
  */
 ?>          
+
+<?php if (is_search()) : ?>
+
+        <div class="row margin-bottom-60">
+            <div class="col-md-8">
+                <article>
+                    <div class="page">
+                        <h2 class="entry-title">
+                            <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+                        </h2>
+                    </div> 
+
+                    <?php if ( is_search() ) : // Only display Excerpts for Search ?>
+                    <div class="entry-summary">
+                        <?php the_excerpt(); ?>
+                    </div><!-- .entry-summary -->
+                    <?php else : ?>
+                    <div class="entry-content">
+                        <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'andexone' ) ); ?>
+                        <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'andexone' ), 'after' => '</div>' ) ); ?>
+                    </div><!-- .entry-content -->
+                    <?php endif; ?>
+
+                </article><!-- #post -->
+            </div>
+            <div class="col-md-4 page-sidebar">
+                <?php get_sidebar() ?>
+            </div>
+        </div>
+
+<?php else : ?>
+
         <div class="row">
             <div class="subtitle subtitle-bg-1 page">
                 <h2 class="color-text-blue"><?php the_title(); ?></h2>
@@ -30,4 +62,4 @@
             </div>
         </div>
 
-
+<?php endif; ?>
