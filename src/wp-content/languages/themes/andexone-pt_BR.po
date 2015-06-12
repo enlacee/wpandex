@@ -1,7 +1,7 @@
 # Translation of Andex One to Spanish (Spain)
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-01-01 21:35-0500\n"
+"PO-Revision-Date: 2015-06-11 20:57-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,31 +33,31 @@ msgstr "Nombre"
 
 #: page-templates/page-contact.php:39
 msgid "Company"
-msgstr "Empresa"
+msgstr "Companhia"
 
 #: page-templates/page-contact.php:48
 msgid "Email"
-msgstr "Correo electrónico"
+msgstr "O Email"
 
 #: page-templates/page-contact.php:59
 msgid "Issue"
-msgstr "Asunto"
+msgstr "Edição"
 
 #: page-templates/page-contact.php:63
 msgid "Consultation"
-msgstr "Consultas"
+msgstr "Consulta"
 
 #: page-templates/page-contact.php:64
 msgid "Requeriments"
-msgstr "Requerimientos"
+msgstr "Requerimentos"
 
 #: page-templates/page-contact.php:65
 msgid "Information"
-msgstr "Informes"
+msgstr "informações"
 
 #: page-templates/page-contact.php:74
 msgid "Message"
-msgstr "Mensaje"
+msgstr "mensagem"
 
 msgid "Send"
 msgstr "Enviar"
