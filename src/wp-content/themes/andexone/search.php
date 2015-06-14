@@ -50,5 +50,5 @@ get_header(); ?>
         
     </div><!-- #wrapper-container -->
 </div><!-- #page -->
-<?phpif( is_search() != true ) { get_sidebar() }; ?>
+<?php if ( is_search() != true ) { get_sidebar(); } ?>
 <?php get_footer(); ?>
