@@ -13,7 +13,8 @@
 
     $dataCategory = get_categories($default);    
     $objCategory = false;
-
+    
+    
     if (count($dataCategory) > 0) {
         //search category : slides
         if (ICL_LANGUAGE_CODE == 'es') {
@@ -37,7 +38,7 @@
         }
 
     }      
-
+    $imgLang = (ICL_LANGUAGE_CODE == 'es') ? '' : ICL_LANGUAGE_CODE;
 // 02 get data last post
     $dataPost = array();
     if (is_object($objCategory)) {
@@ -56,7 +57,7 @@
             </a>
         <?php else: ?>
             <a href="#">
-            <img align="right" class="img-responsive  img-center" src="<?php echo get_template_directory_uri() ?>/assets/img/banner_ejecucion_obras.jpg" alt="" />
+            <img align="right" class="img-responsive  img-center" src="<?php echo get_template_directory_uri() ?>/assets/img/banner_ejecucion_obras<?php echo $imgLang ?>.jpg" alt="" />
             </a>
         <?php endif; ?>
         <a href="<?php echo get_permalink($dataPost->ID) ?>" class="btn-main-gray"><?php _e('more information', 'andexone') ?></a>

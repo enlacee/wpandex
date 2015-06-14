@@ -11,8 +11,12 @@
  * @subpackage Andex_One
  * @since Andex One 1.0
  */
- 
-if (in_category('noticias')) {
+
+if (in_category('noticias') ||
+    in_category('news') ||
+    in_category('noticias.pt') ||
+    in_category('noticias-pt-br')
+) {
     
     include(TEMPLATEPATH.'/single-noticias.php');
 

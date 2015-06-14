@@ -8,13 +8,25 @@
  * @since Andex One 1.0
  */
 ?>
+<?php
+$linkLang = '#';
+if (defined('ICL_LANGUAGE_CODE')) {
+    if (ICL_LANGUAGE_CODE == 'es') {
+        $linkLang = 'noticias';
+    } elseif (ICL_LANGUAGE_CODE == 'en') {
+        $linkLang = 'news?lang=en';
+    } elseif (ICL_LANGUAGE_CODE == 'pt-br') {
+        $linkLang = 'noticia?lang=pt-br';
+    }
+}
 
+?>
             <div class="row">
                 <div class="subtitle subtitle-bg-2 page">
-                    <h2 class="color-text-blue"><?php _e('NOTICIAS') ?></h2>
+                    <h2 class="color-text-blue"><?php _e('NEWS', 'andexone') ?></h2>
                 </div>
                 <div class="pull-right">
-                    <a href="<?php echo esc_url( home_url( '/noticias' ) ); ?>" class="btn-see-news"><?php _e('ver noticias') ?></a>
+                    <a href="<?php echo esc_url( home_url( '/' . $linkLang) ); ?>" class="btn-see-news"><?php _e('see news', 'andexone') ?></a>
                 </div>            
             </div>
 
@@ -45,7 +57,7 @@
             <div class="boder-dotted-blue-bottom "></div>
 
             <div class="pull-left " style="margin-top: 10px">
-                <a href="<?php echo esc_url( home_url( '/noticias' ) ); ?>" class="btn-see-news"><?php _e('ver noticias') ?></a>                
+                <a href="<?php echo esc_url( home_url( '/'. $linkLang ) ); ?>" class="btn-see-news"><?php _e('see news', 'andexone') ?></a>                
             </div>
                         
             <div class="clearfix"></div>

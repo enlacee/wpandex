@@ -34,6 +34,7 @@ if (ICL_LANGUAGE_CODE == 'es') {
     $my_new = (is_object($dat)) ? $dat : $my_new;
 }
 
+// } elseif (ICL_LANGUAGE_CODE == 'pt' || ICL_LANGUAGE_CODE == 'pt-br') {
 $my_02_name = 'asistencia-tecnica';
 $my_02 = get_posts(array('name' => $my_02_name,'post_type' => 'page','post_status' => 'publish','numberposts' => 1));
 $my_02 = (is_array($my_02) && count($my_02)>0) ? $my_02[0] : false;

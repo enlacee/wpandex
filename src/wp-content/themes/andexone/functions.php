@@ -512,7 +512,7 @@ add_filter( 'the_content', 'my_the_content_filter' );
  * @param  string $lang_code code international
  * @return mix null or array
  */
-function get_post_by_language($id_post, $post_type = 'post', $lang_code )
+function get_post_by_language($id_post, $post_type = 'post', $lang_code = false )
 {
     $return = null;
 

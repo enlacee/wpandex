@@ -25,7 +25,12 @@ class Other_Pages_By_Category_Widget extends WP_Widget {
      * @param array $instance Saved values from database.
      */
     public function widget( $args, $instance ) {
-        global $post;  
+        global $post;
+    
+        extract($args);
+        $title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
+        $text = apply_filters( 'widget_text', $instance['text'], $instance );
+    
         echo $args['before_widget'];
         
         ///////////////////////////////

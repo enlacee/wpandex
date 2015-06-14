@@ -28,6 +28,7 @@ if (ICL_LANGUAGE_CODE == 'es') {
     $my_02 = (is_object($dat)) ? $dat : $my_02;
 }
 
+$imgLang = (ICL_LANGUAGE_CODE == 'es') ? '' : ICL_LANGUAGE_CODE;
 ?>
 
 
@@ -35,12 +36,12 @@ if (ICL_LANGUAGE_CODE == 'es') {
     <div class="row news-f3">
         <div class="col-md6 clearfix" style="padding-bottom:8px">
             <a href="<?php echo (!is_null($my_02->ID)) ? get_permalink($my_02->ID) : '#'; ?>">
-                <img align="right" class="img-responsive"  src="<?php echo get_template_directory_uri() ?>/assets/img/banner_asistencia_tecnica.jpg" />
+                <img align="right" class="img-responsive"  src="<?php echo get_template_directory_uri() ?>/assets/img/banner_asistencia_tecnica<?php echo $imgLang ?>.jpg" />
             </a>
         </div>
         <div class="col-md6 clearfix">
             <a href="<?php echo (!is_null($my_new->ID)) ? get_permalink($my_new->ID) : '#'; ?>">
-                <img align="right" class="img-responsive"  src="<?php echo get_template_directory_uri() ?>/assets/img/banner_preguntas_frecuentes.jpg" />
+                <img align="right" class="img-responsive"  src="<?php echo get_template_directory_uri() ?>/assets/img/banner_preguntas_frecuentes<?php echo $imgLang ?>.jpg" />
             </a>
         </div>
     </div>
