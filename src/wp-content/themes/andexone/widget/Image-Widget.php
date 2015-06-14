@@ -25,6 +25,9 @@ class Image_Widget extends WP_Widget {
      * @param array $instance Saved values from database.
      */
     public function widget( $args, $instance ) {
+    extract($args);
+    $title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
+    $text = apply_filters( 'widget_text', $instance['text'], $instance );
     
         echo $args['before_widget'];
         ///////////////////////////////
