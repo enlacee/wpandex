@@ -1,7 +1,7 @@
 # Translation of Andex One to Spanish (Spain)
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-06-11 21:18-0500\n"
+"PO-Revision-Date: 2015-06-13 20:09-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -169,10 +169,13 @@ msgstr ""
 "Lo sientimos, pero no existen coincidencias en su búsqueda. Por favor, "
 "inténtelo de nuevo con palabras diferentes."
 
-msgctxt "placeholder"
+# msgctxt "placeholder"
 msgid "Search ..."
 msgstr "Buscar ..."
 
 # # contact
 msgid "Photo gallery"
 msgstr "Galería de fotos"
+
+msgid "Andex %s Years innovating"
+msgstr "Andex %s Años innovando"

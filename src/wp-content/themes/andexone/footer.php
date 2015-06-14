@@ -21,10 +21,17 @@
                         </a> -->
                         <a href="https://www.youtube.com/user/geosoluciones1/feed?activity_view=3" target="other">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/youtube.png" alt="youtube">
-                        </a>
-                        <!-- <a href="javascript::void()">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/social/linkedin.png" alt="linkedin">
-                        </a> --><p><img src="<?php echo get_template_directory_uri() ?>/assets/img/logo-foot.png" alt="Andex">
+                        </a><br /><br />
+                        <?php 
+                            $d1 = new DateTime('1991-01-01');
+                            $d2 = new DateTime();
+                            $interval = $d1->diff($d2);
+                            $anios = $interval->format('%Y');
+                        ?>
+                        
+                        <p><span class="text-footer-year subtitle-bg-0">
+                            <?php printf( __( 'Andex %s Years innovating', 'andexone' ), $anios ); ?>
+                        </span></p>
                     </div>
                 </div>
             </footer>
