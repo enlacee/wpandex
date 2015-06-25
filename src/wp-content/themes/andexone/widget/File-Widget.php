@@ -25,6 +25,9 @@ class File_Widget extends WP_Widget {
      * @param array $instance Saved values from database.
      */
     public function widget( $args, $instance ) {
+
+        $instance['title'] = __($instance['title'], 'andexone'); // TRANSLATE TITLE
+        
         echo $args['before_widget'];
         ///////////////////////////////
         $attachments = new Attachments( 'attachments' );              

@@ -11,8 +11,8 @@ class Image_Widget extends WP_Widget {
     function __construct() {
         parent::__construct(
             'andexone_image_widget', // Base ID
-            __( 'AndexOne Images', 'text_domain' ), // Name
-            array( 'description' => __( 'AndexOne, Show attachment images in post and pages', 'text_domain' ), ) // Args
+            __( 'AndexOne Images', 'andexone' ), // Name
+            array( 'description' => __( 'AndexOne, Show attachment images in post and pages', 'andexone' ), ) // Args
         );
     }
 
@@ -25,9 +25,13 @@ class Image_Widget extends WP_Widget {
      * @param array $instance Saved values from database.
      */
     public function widget( $args, $instance ) {
+
+        $instance['title'] = __($instance['title'], 'andexone');
+/*
     extract($args);
     $title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
     $text = apply_filters( 'widget_text', $instance['text'], $instance );
+    */
     
         echo $args['before_widget'];
         ///////////////////////////////

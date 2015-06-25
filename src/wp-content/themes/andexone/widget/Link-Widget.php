@@ -25,7 +25,10 @@ class Link_Widget extends WP_Widget {
      * @param array $instance Saved values from database.
      */
     public function widget( $args, $instance ) {
-        global $post;    
+        global $post;
+
+        $instance['title'] = __($instance['title'], 'andexone'); // TRANSLATE TITLE
+        
         echo $args['before_widget'];
         
         ///////////////////////////////             

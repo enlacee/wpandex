@@ -27,9 +27,7 @@ class Other_Pages_By_Category_Widget extends WP_Widget {
     public function widget( $args, $instance ) {
         global $post;
     
-        extract($args);
-        $title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
-        $text = apply_filters( 'widget_text', $instance['text'], $instance );
+        $instance['title'] = __($instance['title'], 'andexone'); // TRANSLATE TITLE
     
         echo $args['before_widget'];
         

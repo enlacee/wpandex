@@ -10,11 +10,11 @@
 
 <?php if (is_search()) : ?>
 
-        <div class="row margin-bottom-60">
-            <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-12">
                 <article>
                     <div class="page">
-                        <h2 class="entry-title">
+                        <h2 class="entry-title point-li">
                             <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
                         </h2>
                     </div> 
@@ -32,9 +32,9 @@
 
                 </article><!-- #post -->
             </div>
-            <div class="col-md-4 page-sidebar">
-                <?php get_sidebar() ?>
-            </div>
+            <!--<div class="col-md-4 page-sidebar">
+                <?php //get_sidebar() ?>
+            </div>-->
         </div>
 
 <?php else : ?>

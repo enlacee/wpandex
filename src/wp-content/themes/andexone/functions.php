@@ -534,9 +534,9 @@ function get_post_by_language($id_post, $post_type = 'post', $lang_code = false 
 
     return $return;
 }
-
+/*
 function translate_title($title) {
  return __($title);
 }
 add_filter('widget_title', translate_title);
-
+*/

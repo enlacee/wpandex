@@ -1,7 +1,7 @@
 # Translation of Andex One to Spanish (Spain)
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-06-14 15:11-0500\n"
+"PO-Revision-Date: 2015-06-25 01:20-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -131,6 +131,11 @@ msgstr "Proyectos"
 msgid "SECTORS"
 msgstr "SECTORES"
 
+msgid "sectores.en"
+msgstr "sectores"
+
+
+
 # #
 # #
 msgid "see news"
@@ -183,8 +188,8 @@ msgstr "Documentos"
 msgid "Videos"
 msgstr "Videos"
 
-msgid "Others : "
-msgstr "Otros : "
+msgid "Others "
+msgstr "Otros "
 
 msgid "Related news"
 msgstr "Noticias relacionadas"
