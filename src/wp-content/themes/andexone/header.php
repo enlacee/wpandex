@@ -42,8 +42,9 @@ $list = preg_replace( array( '#^<div[^>]*>#', '#</div>$#','#^<ul[^>]*>#', '#</ul
                             <form method="get" class="" action="<?php echo home_url('/'); ?>">
                             <ul class="loginbar pull-right">
                                 <li>
-                                    <span>
+                                    <span  class="finder" style="position:relative">
                                         <input type="search" class="" placeholder="<?php echo _e('Search ...', 'andexone') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" />
+                                         <span class="ico-find"></span>
                                     </span>
                                 </li>
                                  

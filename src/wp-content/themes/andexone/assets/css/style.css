@@ -1001,3 +1001,20 @@ h4 {
   color: #337ab7;
   font-size: 40px;
 }
+.finder {
+    position: relative;
+}
+.finder input {
+    border: 1px solid #A8A8AA;
+    box-shadow: 0px 0px 1px 0px #A8A8AA;
+    padding: 3px 2px 2px 2px;
+}
+.finder .ico-find {
+    width: 26px;
+    height: 24px;
+    position: absolute;
+    right: 4px;
+    background: rgb(168, 168, 170);
+    top: -5px;
+    background-image: url('http://andex.com.pe/web/wp-content/themes/andexone/assets/img/ico_find.jpg')
+}
